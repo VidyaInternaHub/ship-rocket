@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background-100: #764abc;
+  --color-lilac-100: #eabad2;
+  --color-light-100: #eae3f5;
+  --color-regal-blue: #243c5a;
+
+  --font-manrope:Manrope,sans-serif;
+  --font-TWKLausanne:TWKLausanne,sans-serif;
+
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
+
+  @keyframes marquee {
+    -100% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  @keyframes fade-in-scale {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(0.5);
+    }
+  }
+}
