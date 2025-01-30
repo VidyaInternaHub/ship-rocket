@@ -1,14 +1,14 @@
 
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import domesticshipping from "../assets/images/sticky-image/shipingIcon.svg";
-import sticky1 from "../assets/images/sticky-image/feat-img-10.webp";
-import sticky2 from "../assets/images/sticky-image/feat-img-11.webp";
-import sticky3 from "../assets/images/sticky-image/feat-img-12.webp";
-import sticky4 from "../assets/images/sticky-image/Ship-Now-1-1.webp";
-import sticky5 from "../assets/images/sticky-image/feat-img-1.png";
-import sticky6 from "../assets/images/sticky-image/feat-img-2.png";
-import sticky7 from "../assets/images/sticky-image/feat-img-9.png";
+import domesticshipping from "../../assets/images/sticky-image/shipingIcon.svg";
+import sticky1 from "../../assets/images/sticky-image/feat-img-10.webp";
+import sticky3 from "../../assets/images/sticky-image/feat-img-12.webp";
+import sticky4 from "../../assets/images/sticky-image/Ship-Now-1-1.webp";
+import sticky5 from "../../assets/images/sticky-image/feat-img-1.png";
+import sticky2 from "../../assets/images/sticky-image/feat-img-11.webp";
+import sticky6 from "../../assets/images/sticky-image/feat-img-2.png";
+import sticky7 from "../../assets/images/sticky-image/feat-img-9.png";
 
 const shipping = [
   { name: sticky1 },
@@ -21,14 +21,14 @@ const fullstack = [{ name: sticky5 }, { name: sticky6 }, { name: sticky7 }];
 
 function StickySection() {
   const { scrollY } = useScroll();
-  const scale1 = useTransform(scrollY, [0, 600], [1, 0.8]);
-  const scale2 = useTransform(scrollY, [600, 1000], [1, 0.85]);
-  const scale3 = useTransform(scrollY, [1000, 1600], [1, 0.9]);
-  const scale4 = useTransform(scrollY, [1600, 2000], [1, 0.95]);
+  const scale1 = useTransform(scrollY, [0, 1400], [1, 0.8]);
+  const scale2 = useTransform(scrollY, [1400, 1800], [1, 0.85]);
+  const scale3 = useTransform(scrollY, [1800, 2200], [1, 0.9]);
+  const scale4 = useTransform(scrollY, [2200, 2600], [1, 0.95]);
 
 
   return (
-    <div className="bg-white">
+    <div className="bg-white font-manrope">
       <h1 className="text-5xl leading-20 font-semibold ml-2">
         Why is Shiprocket the Trusted Partner for Scaling eCommerce Businesses?
       </h1>

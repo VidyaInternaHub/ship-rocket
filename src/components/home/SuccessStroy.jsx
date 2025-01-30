@@ -1,23 +1,19 @@
-import React from "react";
-import zomato from "../assets/images/brands/zomato-logo.png";
-import giva from "../assets/images/brands/giva-logo.png";
-import delhivery from "../assets/images/brands/c2.png";
-import bellavita from "../assets/images/brands/bellavita-logo.png";
-import levis from "../assets/images/brands/levis-logo.png";
-import mamaearth from "../assets/images/brands/mamaearth.webp";
-import mCaffeine from "../assets/images/brands/m-caffeine.webp";
-import patanjali from "../assets/images/brands/patanjali-logo.png";
-import relaxo from "../assets/images/brands/relaxo1.webp";
-import samsung from "../assets/images/brands/samsung.webp";
-import kellogg from "../assets/images/brands/ds.png";
-import bodycare from "../assets/images/brands/body-care-re.png";
-import akash from "../assets/images/brands/akash.png";
-import decathlon from "../assets/images/brands/decathlone-logo.png";
+import zomato from "../../assets/images/brands/zomato-logo.png";
+import giva from "../../assets/images/brands/giva-logo.png";
+import bellavita from "../../assets/images/brands/bellavita-logo.png";
+import levis from "../../assets/images/brands/levis-logo.png";
+import mamaearth from "../../assets/images/brands/mamaearth.webp";
+import mCaffeine from "../../assets/images/brands/m-caffeine.webp";
+import patanjali from "../../assets/images/brands/patanjali-logo.png";
+import relaxo from "../../assets/images/brands/relaxo1.webp";
+import samsung from "../../assets/images/brands/samsung.webp";
+import bodycare from "../../assets/images/brands/body-care-re.png";
+import akash from "../../assets/images/brands/akash.png";
+import decathlon from "../../assets/images/brands/decathlone-logo.png";
 
 const brands = [
   { name: "Zomato", logo: zomato },
   { name: "Giva", logo: giva },
-  { name: "Delhivery", logo: delhivery },
   { name: "Bellavita", logo: bellavita },
   { name: "Levis", logo: levis },
   { name: "Mamaearth", logo: mamaearth },
@@ -25,7 +21,6 @@ const brands = [
   { name: "Patanjali", logo: patanjali },
   { name: "Relaxo", logo: relaxo },
   { name: "Samsung", logo: samsung },
-  { name: "Kellogg", logo: kellogg },
   { name: "Bodycare", logo: bodycare },
   { name: "Akash", logo: akash },
   { name: "Decathlon", logo: decathlon },
