@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import { BsArrowRight } from "react-icons/bs";
-import banner1 from "../assets/images/banners/banner-1.webp";
-import banner2 from "../assets/images/banners/banner-2.webp";
-import banner3 from "../assets/images/banners/banner-3.webp";
-import banner4 from "../assets/images/banners/banner-4.webp";
-import banner5 from "../assets/images/banners/banner-5.webp";
+import banner1 from "../../assets/images/banners/banner-1.webp";
+import banner2 from "../../assets/images/banners/banner-2.webp";
+import banner3 from "../../assets/images/banners/banner-3.webp";
+import banner4 from "../../assets/images/banners/banner-4.webp";
+import banner5 from "../../assets/images/banners/banner-5.webp";
+import bgImage from "../../assets/images/backgrounds/bg-colors-scaled-1.webp"
 
 // Image data array
 const sliders = [
@@ -61,7 +62,13 @@ function Hero() {
   }, []);
 
   return (
-    <div className="relative overflow-hidden w-screen h-screen flex">
+    <div
+      className="relative overflow-hidden w-screen h-screen flex"
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "contain",
+      }}
+    >
       {sliders.map((slider, index) => (
         <div
           key={index}

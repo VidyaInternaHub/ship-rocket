@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
-import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import SuccessStroy from "../components/SuccessStroy";
-import Hero from "../components/Hero";
-import StickySection from "../components/StickySection";
+import SuccessStroy from "../components/home/SuccessStroy";
+import Hero from "../components/home/Hero";
+import StickySection from "../components/home/StickySection";
 import FixedHeader from "../components/FixedHeader";
+import Innovations from "../components/home/Innovations";
+import Experience from "../components/home/Experience";
+import DigitalPlateform from "../components/home/DigitalPlatform";
+import Developers from "../components/home/Developers";
+import Headlines from "../components/home/Headlines";
+import Blogs from "../components/home/Blogs";
+import OurServices from "../components/home/OurServices";
 
 function Home() {
   const [showFixedHeader, setShowFixedHeader] = useState(false);
@@ -33,7 +39,13 @@ function Home() {
       <Hero />
       <SuccessStroy />
       <StickySection />
-      <Faq />
+      <Innovations/>
+      <Experience/>
+      <DigitalPlateform/>
+      <Developers/>
+      <OurServices/>
+      <Headlines/>
+      <Blogs/>
       <Footer />
     </div>
   );
