@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Logo from "../../assets/images/brands/shiprocket_logo.svg";
+import Logo from "../../assets/images/logo/srlogoIcon.png";
 
 function FixedHeader() {
   
@@ -14,12 +14,12 @@ function FixedHeader() {
   return (
     <motion.nav
       style={{ y, opacity }}
-      className="hidden md:flex md: bg-white fixed top-2 left-1/2 transform  -translate-x-1/2 p-4 w-4/5 rounded-full shadow-lg items-center justify-center z-50"
+      className="hidden md:flex justify-between bg-zinc-100 bg-opacity-0 backdrop-blur-2xl fixed top-2 left-1/2 transform -translate-x-1/2 py-3 p-4 w-14/15 rounded-full shadow-lg items-center z-50"
     >
-      <ul className="flex gap-4 items-center justify-center w-full">
+      <ul className="flex gap-4 items-center w-full">
         <li>
           <Link to="/home">
-            <img src={Logo} alt="Logo" className="w-40" />
+            <img src={Logo} alt="Logo" className="w-9" />
           </Link>
         </li>
         <li>
@@ -62,7 +62,7 @@ function FixedHeader() {
         <button className="border border-blue-600 w-24 text-blue-600 p-2 rounded-full">
           Log In
         </button>
-        <button className="border w-24 p-2 bg-blue-600 rounded-full text-white">
+        <button className="border w-28 p-2 px-3 bg-blue-600 rounded-full text-white">
           Try for free
         </button>
       </div>
