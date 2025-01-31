@@ -35,7 +35,7 @@ function SuccessStory() {
       </h1>
       <div className="overflow-hidden relative">
         <div className="flex gap-2 animate-marquee">
-          {brands.map((brand, index) => (
+          {brands.concat(brands).map((brand, index) => (
             <div
               key={index}
               className="flex-none w-40 h-16 border border-zinc-100 rounded-lg p-3 flex items-center justify-center"
