@@ -67,16 +67,17 @@ const ecommercePlatforms = [
 function DigitalPlatform() {
   return (
     <div
-      className="relative space-y-8 py-8"
-      style={{ backgroundImage: `url(${bgDots})`, backgroundSize: "contain" }}
+      className="relative inset-0 bg-zinc-200 space-y-8 py-20"
+      style={{ backgroundImage: `url(${bgDots})`, backgroundSize: "cover"}}
     >
-      <div className="absolute inset-0 bg-zinc-300 opacity-50 pointer-events-none"></div>
-      <h1 className="relative z-10 text-zinc-900 leading-16 text-center text-semibold md:text-start text-5xl ml-4">
+      {/* Background Overlay (For Opacity Effect) */}
+      <div className="absolute inset-0 z-0 bg-zinc-200 opacity-80 h-full"></div>
+      <h1 className="relative z-10 bg-zinc-200 w-fit text-zinc-900 leading-16 text-center text-semibold md:text-start text-5xl ml-4">
         Seamless Integrations with <br /> 220+ Digital Platforms
       </h1>
 
       {/* Marquee for Logistics Partners */}
-      <div className="overflow-hidden relative space-y-3">
+      <div className="overflow-hidden relative z-10 space-y-3">
         <div className="flex gap-2 animate-marquee">
           {logisticsPartners.concat(logisticsPartners).map((partner, index) => (
             <div
@@ -94,18 +95,20 @@ function DigitalPlatform() {
 
         {/* Reverse Marquee for E-commerce Platforms */}
         <div className="flex space-x-2 animate-marquee-reverse">
-          {ecommercePlatforms.concat(ecommercePlatforms).map((platform, index) => (
-            <div
-              key={index}
-              className="flex-none w-40 rounded-lg flex items-center justify-center"
-            >
-              <img
-                src={platform.logo}
-                alt={platform.name}
-                className="max-w-full max-h-full"
-              />
-            </div>
-          ))}
+          {ecommercePlatforms
+            .concat(ecommercePlatforms)
+            .map((platform, index) => (
+              <div
+                key={index}
+                className="flex-none w-40 rounded-lg flex items-center justify-center"
+              >
+                <img
+                  src={platform.logo}
+                  alt={platform.name}
+                  className="max-w-full max-h-full"
+                />
+              </div>
+            ))}
         </div>
       </div>
     </div>

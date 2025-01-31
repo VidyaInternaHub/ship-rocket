@@ -13,6 +13,7 @@ import OurServices from "../components/home/OurServices";
 import Header from "../components/home/Header";
 import FixedHeader from "../components/home/FixedHeader";
 import MobileNav from "../components/home/MobileNav";
+import OurSellers from "../components/home/OurSellers";
 
 function Home() {
   const [showFixedHeader, setShowFixedHeader] = useState(false);
@@ -47,6 +48,7 @@ function Home() {
       <Experience />
       <DigitalPlateform />
       <Developers />
+      <OurSellers/>
       <OurServices />
       <Headlines />
       <Blogs />
