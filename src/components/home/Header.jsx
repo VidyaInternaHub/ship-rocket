@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/images/brands/shiprocket_logo.svg";
+import Logo from "../../assets/images/brands/shiprocket_logo.svg";
 import { Link } from "react-router-dom";
 
 function Header() {

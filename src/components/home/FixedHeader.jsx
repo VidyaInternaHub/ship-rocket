@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Logo from "../assets/images/brands/shiprocket_logo.svg";
+import Logo from "../../assets/images/brands/shiprocket_logo.svg";
 
 function FixedHeader() {
   
@@ -14,7 +14,7 @@ function FixedHeader() {
   return (
     <motion.nav
       style={{ y, opacity }}
-      className="flex bg-white fixed top-2 left-1/2 transform  -translate-x-1/2 p-4 w-4/5 rounded-full shadow-lg items-center justify-center z-50"
+      className="hidden md:flex md: bg-white fixed top-2 left-1/2 transform  -translate-x-1/2 p-4 w-4/5 rounded-full shadow-lg items-center justify-center z-50"
     >
       <ul className="flex gap-4 items-center justify-center w-full">
         <li>
