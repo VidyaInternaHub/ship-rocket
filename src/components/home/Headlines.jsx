@@ -27,8 +27,8 @@ const headlines = [
 
 function Headlines() {
   return (
-    <div className="bg-zinc-300 space-y-8 py-8">
-      <h1 className="text-zinc-900 px-4 text-center font-manrope md:text-start text-5xl ml-2">
+    <div className="bg-zinc-100 space-y-8 py-8">
+      <h1 className="text-zinc-900 px-4 font-manrope text-start text-3xl md:text-5xl ml-2">
         Shiprocket Making Headlines
       </h1>
       <div className="overflow-hidden relative">

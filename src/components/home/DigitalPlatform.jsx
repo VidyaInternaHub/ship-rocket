@@ -72,7 +72,7 @@ function DigitalPlatform() {
     >
       {/* Background Overlay (For Opacity Effect) */}
       <div className="absolute inset-0 z-0 bg-zinc-200 opacity-80 h-full"></div>
-      <h1 className="relative z-10 bg-zinc-200 w-fit text-zinc-900 leading-16 text-center text-semibold md:text-start text-5xl ml-4">
+      <h1 className="relative z-10 bg-zinc-200 w-fit text-zinc-900 md:leading-16 text-left text-semibold text-3xl md:text-5xl ml-4">
         Seamless Integrations with <br /> 220+ Digital Platforms
       </h1>
 

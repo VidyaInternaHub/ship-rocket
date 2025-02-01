@@ -89,7 +89,7 @@ const socialmedias = [
 function Blogs() {
   return (
     <div className="bg-white opacity-90 py-12 px-4 space-y-8">
-      <h1 className="text-4xl md:text-5xl font-bold text-zinc-950 leading-tight">
+      <h1 className="text-4xl md:text-5xl md:font-bold text-zinc-950 leading-tight">
         Discover Our Blogs
       </h1>
       {/* Blog Cards Section */}
