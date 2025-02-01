@@ -42,7 +42,6 @@ function Experience() {
     if (index < activeIndex) return "left";
     return "right";
   };
-  console.log(getCardPosition());
 
   return (
     <div
