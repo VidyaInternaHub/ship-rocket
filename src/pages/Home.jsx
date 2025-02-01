@@ -14,6 +14,8 @@ import Header from "../components/home/Header";
 import FixedHeader from "../components/home/FixedHeader";
 import MobileNav from "../components/home/MobileNav";
 import OurSellers from "../components/home/OurSellers";
+import OurCoreStrengths from "../components/home/OurCoreStrengths";
+import BusinessesBenefit from "../components/home/BusinessesBenefit";
 
 function Home() {
   const [showFixedHeader, setShowFixedHeader] = useState(false);
@@ -48,6 +50,8 @@ function Home() {
       <Experience />
       <DigitalPlateform />
       <Developers />
+      <OurCoreStrengths/>
+      <BusinessesBenefit/>
       <OurSellers/>
       <OurServices />
       <Headlines />
