@@ -101,8 +101,8 @@ function OurSellers() {
       >
         {/* Background Overlay (For Opacity Effect) */}
         <div className="absolute inset-0 bg-zinc-200 opacity-80"></div>
-        <h1 className="relative z-30 w-fit text-5xl py-6 text-start px-8 bg-zinc-200">
-          Anywhere, Anytime – With Your <br />
+        <h1 className="relative z-30 w-fit text-3xl md:text-5xl py-6 text-left px-4 md:px-8 bg-zinc-200">
+          Anywhere, Anytime – With Your
           Choice of Courier Partners
         </h1>
         {/* Marquee for Logistics Partners */}
@@ -145,7 +145,7 @@ function OurSellers() {
         </div>
       </div>
       {/* our sellers */}
-      <h1 className="text-5xl py-6 text-start px-8">Voices of Our Sellers</h1>
+      <h1 className="text-3xl md:text-5xl leading-5 md:py-6 text-left px-8">Voices of Our Sellers</h1>
 
       {/* Seller Logos */}
       <div className="bg-zinc-200 border-b border-zinc-300 flex items-center justify-between gap-4 px-8">

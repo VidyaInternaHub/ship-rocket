@@ -42,8 +42,8 @@ function OurServices() {
   return (
     <div className="font-manrope bg-gray-100 py-12 px-4">
       {/* Title */}
-      <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12">
-        Our Services <br/> & Solutions Portfolio
+      <h1 className="text-3xl md:text-5xl text-gray-900 mb-12">
+        Our Services & Solutions Portfolio
       </h1>
 
       {/* Services List */}
@@ -52,9 +52,16 @@ function OurServices() {
           <div
             key={index}
             className={`flex flex-col md:flex-row items-center gap-8 ${
-              index % 2 === 1 ? "" : "md:flex-row-reverse"
+              index % 2 === 0 ? "" : "md:flex-row-reverse"
             }`}
           >
+            {/* Text Content */}
+            <div className="md:w-1/2 text-left">
+              <h2 className="text-2xl md:text-4xl text-gray-800">
+                {service.title}
+              </h2>
+              <p className="text-gray-600 mt-4">{service.desc}</p>
+            </div>
             {/* Image */}
             <div className="md:w-1/2">
               <img
@@ -62,14 +69,6 @@ function OurServices() {
                 alt={service.title}
                 className="w-full h-full object-cover"
               />
-            </div>
-
-            {/* Text Content */}
-            <div className="md:w-1/2 text-center md:text-left">
-              <h2 className="text-3xl font-semibold text-gray-800">
-                {service.title}
-              </h2>
-              <p className="text-gray-600 mt-4">{service.desc}</p>
             </div>
           </div>
         ))}

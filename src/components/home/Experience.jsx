@@ -52,7 +52,7 @@ function Experience() {
       }}
     >
       {/* Heading */}
-      <h1 className="text-3xl md:text-5xl w-full md:w-2/3 text-center font-semibold">
+      <h1 className="text-3xl md:text-5xl w-full md:w-2/3 text-left md:text-center md:font-medium">
         Experience Shiprocket Products Through Live Demos
       </h1>
 

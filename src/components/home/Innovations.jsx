@@ -21,7 +21,7 @@ const innovations = [
 function Innovations() {
   return (
     <div
-      className="relative min-h-screen w-full flex flex-col py-12 px-4 sm:px-6 lg:px-8"
+      className="relative h-fit w-full flex flex-col py-12 px-4 sm:px-6 lg:px-8"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
@@ -50,7 +50,7 @@ function Innovations() {
         {innovations.map((innovation, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row items-center bg-zinc-700 rounded-lg shadow-lg overflow-hidden"
+            className="flex flex-col-reverse md:flex-row items-center bg-zinc-700 rounded-lg shadow-lg overflow-hidden"
           >
             {/* Text Content */}
             <div className="p-6 flex-1">

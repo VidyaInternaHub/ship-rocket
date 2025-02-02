@@ -29,10 +29,10 @@ function StickySection() {
 
   return (
     <div className="bg-white font-manrope">
-      <h1 className="text-5xl leading-20 font-semibold ml-2">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl leading-tight mb-4 pt-8 px-4 md:px-8">
         Why is Shiprocket the Trusted Partner for Scaling eCommerce Businesses?
       </h1>
-      <p className="leading-6 tracking-tighter ml-2 w-3/4 mb-6">
+      <p className="text-sm sm:text-base leading-6 tracking-tighter w-full sm:w-3/4 mb-6 px-4 md:px-8">
         We’re more than a shipping partner. While we excel at simplifying
         logistics for our sellers, our tech solutions drive comprehensive
         e-commerce growth - streamlining operations, from marketing and
@@ -52,7 +52,7 @@ function StickySection() {
             <h1 className="text-black rounded-full bg-zinc-100 w-[68px] text-center">
               <span className="font-semibold">1</span>/4
             </h1>
-            <div className="flex gap-2 items-center">
+            <div className="flex flex-wrap gap-2 items-center">
               <img
                 src={domesticshipping}
                 alt="domestic shipping"
@@ -62,13 +62,13 @@ function StickySection() {
                 Unified domestic shipping
               </h2>
             </div>
-            <div className="flex gap-2">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
               {shipping.map((sticky, index) => (
                 <img
                   key={index}
                   src={sticky.name}
                   alt={sticky.name}
-                  className="w-20 h-20 md:w-68 md:h-full rounded-md"
+                  className="w-36 md:w-64 h-full rounded-md"
                 />
               ))}
             </div>
@@ -97,13 +97,13 @@ function StickySection() {
                 Full-stack global enablement
               </h2>
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               {fullstack.map((sticky, index) => (
                 <img
                   key={index}
                   src={sticky.name}
                   alt={sticky.name}
-                  className="w-20 h-20 md:w-68 md:h-full rounded-md"
+                  className="w-36 md:w-64 h-full rounded-md"
                 />
               ))}
             </div>
@@ -132,13 +132,13 @@ function StickySection() {
                 Full-stack global enablement
               </h2>
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               {shipping.map((sticky, index) => (
                 <img
                   key={index}
                   src={sticky.name}
                   alt={sticky.name}
-                  className="w-20 h-20 md:w-68 md:h-full rounded-md"
+                  className="w-36 md:w-64 h-full rounded-md"
                 />
               ))}
             </div>
@@ -167,13 +167,13 @@ function StickySection() {
                 Unified domestic shipping
               </h2>
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               {shipping.map((sticky, index) => (
                 <img
                   key={index}
                   src={sticky.name}
                   alt={sticky.name}
-                  className="w-20 h-20 md:w-68 md:h-full rounded-md"
+                  className="w-36 md:w-64 h-full rounded-md"
                 />
               ))}
             </div>
