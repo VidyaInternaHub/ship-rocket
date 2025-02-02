@@ -21,7 +21,7 @@ const innovations = [
 function Innovations() {
   return (
     <div
-      className="relative min-h-screen w-full flex flex-col py-12 px-4 sm:px-6 lg:px-8"
+      className="relative h-fit w-full flex flex-col py-12 px-4 sm:px-6 lg:px-8"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
