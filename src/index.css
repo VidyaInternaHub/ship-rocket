@@ -5,7 +5,7 @@ body {
 }
 
 @theme {
-  --container-ship:
+  --clipPath-shape: polygon(33% 28%, 66% 28%, 66% 0, 100% 0, 100% 99%, 0 100%, 0 0, 33% 0);
   --color-background-100: #764abc;
   --color-lilac-100: #eabad2;
   --color-light-100: #eae3f5;
@@ -47,4 +47,15 @@ body {
       transform: scale(0.5);
     }
   }
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
