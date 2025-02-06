@@ -10,7 +10,7 @@ import Developers from "../components/home/Developers";
 import Headlines from "../components/home/Headlines";
 import Blogs from "../components/home/Blogs";
 import OurServices from "../components/home/OurServices";
-import Header from "../components/home/Header";
+import Header from "../components/Header";
 import FixedHeader from "../components/home/FixedHeader";
 import MobileNav from "../components/home/MobileNav";
 import OurSellers from "../components/home/OurSellers";
