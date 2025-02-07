@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const productCategories = {
   Shipping: [
     {
-      title: "Domestic Shipping",
+      title: "Domestic-Shipping",
       desc: "Shipping to 19,000+ unique pin codes",
       menuIcon: "icon_path_here",
     },
