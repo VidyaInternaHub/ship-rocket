@@ -16,7 +16,7 @@ function Navbar2() {
                 <li>Blog</li>
                 <li>Log In</li>
                 <li>
-                    <button className='bg-burgundy text-xl text-white h-12 w-32 text-center rounded-md'>
+                    <button className='bg-burgundy text-lg text-white h-12 w-32 text-center rounded-md'>
                     Try For Free
                     </button>
                 </li>

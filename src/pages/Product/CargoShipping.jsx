@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../../components/Products/CargoShipping/Navbar'
 import Navbar2 from '../../components/Products/CargoShipping/Navbar2'
 import Cargo from '../../assets/images/Cargo/Cargo.png'
 import Feature from '../../components/Products/CargoShipping/Feature'
@@ -16,12 +15,15 @@ import Customer from '../../components/Products/CargoShipping/Customer'
 import Blog from '../../components/Products/CargoShipping/Blog'
 import FAQ from '../../components/Products/CargoShipping/FAQ'
 import OurPartners from '../../components/Products/CargoShipping/OurPartners'
-import Footer from '../../components/Products/CargoShipping/Footer'
-
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
+import Navbar from '../../components/Products/CargoShipping/Navbar'
 function CargoShipping() {
   return (
-    <>
-    <Navbar />
+    <div className='overflow-x-hidden'>
+    <div className='max-w-6xl mx-auto  md:block'>
+    <Header />
+    </div>
     <Navbar2 />
     <div className="custom-gradient1   w-full pb-10 pt-10 relative ">
         <div className=" absolute -bottom-16 left-0 transform -rotate-2 z-10 w-full bg-white h-30 overflow-hidden
@@ -70,7 +72,7 @@ function CargoShipping() {
     <OurPartners />
     <Footer />
     
-    </>
+    </div>
   )
 }
 

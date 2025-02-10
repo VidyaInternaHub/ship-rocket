@@ -21,7 +21,7 @@ function Navbar2() {
       };
     }, []);
   return (
- <div className={` ${!isSticky && "custom-gradient1" }py-4 sticky top-4 z-50`}>
+ <div className={` ${!isSticky && "custom-gradient1" }py-4 sticky top-4 z-40`}>
        <div className='max-w-6xl mx-auto  '>
             <div   className={`w-full flex justify-between items-center  ${isSticky ? 'bg-[#ffffffa5] backdrop-blur-xl h-16 py-4 px-6 rounded-[50px]' : ''} transition-all duration-500 my-5`}>
                 <img src={Quick} alt="Quick" className='h-10 w-20' />

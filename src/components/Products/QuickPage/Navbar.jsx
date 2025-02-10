@@ -3,12 +3,11 @@ import { FaChevronDown } from "react-icons/fa";
 import { RiMenu3Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 
-<<<<<<<< HEAD:src/components/Products/QuickPage/Navbar.jsx
+
 
 import Logo from '../../../assets/images/Quick/Logo.png'
-========
+
 import Logo from '../../../assets/images/Cargo/logo.png'
->>>>>>>> Cargo_Shipping:src/components/Products/CargoShipping/Navbar.jsx
 function Navbar() {
     const [open, setOpen] = useState(false);
   return (

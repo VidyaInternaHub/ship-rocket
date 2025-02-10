@@ -15,7 +15,9 @@ function QuickPage() {
   return (
     <>
     {/* <Navbar /> */}
+    <div className='max-w-6xl mx-auto'>
     <Header />
+    </div>
     <Navbar2 />
         <div className='w-full  custom-gradient1 relative py-20 overflow-hidden '>
           <div className=" absolute -bottom-12 -left-0 transform -rotate-2 w-[102%] -right-1  bg-white h-30 overflow-hidden "></div>

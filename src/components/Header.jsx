@@ -118,6 +118,9 @@ import Logo from "../assets/images/brands/shiprocket_logo.svg";
 import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
 import ProductsLinkBox from "./Products/ProductsLinkBox";
+import {motion} from 'framer-motion'
+import { RiMenu3Line } from "react-icons/ri";
+import { IoMdClose } from "react-icons/io";
 
 const nav = [
   "Product",
@@ -131,8 +134,11 @@ const nav = [
 function Header() {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
+  const [open, setOpen] = useState(false);
+
   return (
-    <nav className="flex bg-white p-4 w-full justify-between items-center relative">
+    <>
+    <nav className=" bg-white p-4 w-full justify-between items-center relative hidden md:flex">
       {/* Logo */}
       <Link to="/">
         <img src={Logo} alt="Logo" className="w-40" />
@@ -145,7 +151,7 @@ function Header() {
             key={item}
             className="relative flex items-center gap-1 text-black cursor-pointer"
             onMouseEnter={() => setActiveDropdown(item)}
-            // onMouseLeave={() => setActiveDropdown(null)}
+            onMouseLeave={() => setActiveDropdown(null)}
           >
             {item}
             <FaChevronDown
@@ -172,17 +178,59 @@ function Header() {
         </button>
       </div>
     </nav>
+    <div className='w-full border-b border-b-gray-300 border-dashed '>
+    <nav className='md:hidden  '>
+        <div className={`flex justify-between p-2 border-b border-dashed border-gray-400 ${open ? "z-50 fixed" :"z-0"}`}>
+            <img src={Logo} alt="logo" className="w-32 h-10"/>
+            <div className="button">
+                <button onClick={() => setOpen(!open)} className='text-2xl cursor-pointer '>
+                    <RiMenu3Line />
+            
+                </button>
+                
+                
+
+            </div>
+        </div>
+        {open && (        <div className='mt-3 fixed -top-2 left-0 bottom-0 right-0 bg-white z-50 md:-z-10  '> 
+            <ul className=' flex flex-col gap-6'>
+                <li className='relative text-2xl cursor-pointer w-full flex justify-end top-3 right-5' onClick={() => setOpen(!open)} ><IoMdClose /></li>
+                <li className='border-b border-gray-200 p-2 flex justify-between' onClick={() => setActiveDropdown((prev) => (prev === "Product" ? null : "Product"))}>Products</li>
+                {activeDropdown === "Product" && <ProductsLinkBox />}
+                <li className='border-b border-gray-200 p-2 flex justify-between'  onClick={() => setActiveDropdown((prev) => (prev === "Platorm" ? null : "Platform"))}>Platform</li>
+              
+                <li className='border-b border-gray-200 p-2 flex justify-between'>Pricing</li>
+                <li className='border-b border-gray-200 p-2 flex justify-between'>Partners</li>
+                <li className='border-b border-gray-200 p-2 flex justify-between'>Track Order</li>
+                <li className='border-b border-gray-200 p-2 flex justify-between'>Resources</li>
+                <li className='border-b border-gray-200 p-2 flex justify-between'>Quick</li>
+                <li className='border-b border-gray-200 p-2 flex justify-between'>Login</li>
+
+            </ul>
+            <button className='w-80 mx-6 text-center border-0 rounded-lg text-xl py-2 bg-[#735ae5] text-white  my-6'>Try For Free</button>
+
+        </div>)}
+
+    </nav>
+    </div>
+    </>
   );
 }
 
 const Dropdown = ({ activeDropdown }) => {
   return (
-    <div className="fixed top-10 left-0 w-[500px] bg-white border border-gray-300 p-4 rounded shadow-lg z-50">
+    <motion.div className="fixed top-12 left-0 w-full h-[80%]    p-8  px-10 rounded-3xl  z-50"
+    initial={{ scaleY: 0.9, opacity: 0 }} 
+    animate={{ scaleY: 1, opacity: 1 }}
+    exit={{ scaleY: 0, opacity: 0 }} 
+    transition={{ duration: 0.4, ease: "easeInOut" }}
+    style={{ transformOrigin: "top" }} 
+    >
       {activeDropdown === "Product" && <ProductsLinkBox />}
       {activeDropdown === "Platform" && <div>Platform Content</div>}
       {activeDropdown === "Pricing" && <div>Pricing Content</div>}
       {activeDropdown === "Resource" && <div>Resource Content</div>}
-    </div>
+    </motion.div>
   );
 };
 
