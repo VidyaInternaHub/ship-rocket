@@ -4,7 +4,7 @@ import { RiMenu3Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 
 
-import Logo from '../assets/images/Logo.png'
+import Logo from '../../../assets/images/Quick/Logo.png'
 function Navbar() {
     const [open, setOpen] = useState(false);
   return (

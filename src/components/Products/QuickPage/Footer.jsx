@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Footerlogo from "../assets/images/Footerlogo.png"
-import Playstore from "../assets/images/Playstore.png"
-import Appstore from "../assets/images/Appstore.png"
+import Footerlogo from "../../../assets/images/Quick/Footerlogo.png"
+import Playstore from "../../../assets/images/Quick/Playstore.png"
+import Appstore from "../../../assets/images/Quick/Appstore.png"
 import { FaFacebook, FaMailBulk, FaInstagram,FaYoutube,FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { CiMail,CiLocationOn } from "react-icons/ci";

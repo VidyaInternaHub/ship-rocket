@@ -24,7 +24,7 @@ function FAQ() {
             {
                 faqs.map((faq,index)=>(
                     <div className=' border-gray-300 border-b-2 px-3 md:pb-0 cursor-pointer mt-4 md:mt-0' key={index}>
-                    <p onClick={()=>setIndexOpened(index)} className={`lg:whitespace-nowrap  text-xl md:text-2xl ${indexOpened === index && "text-burgundy"}`}><span className={`font-normal inline-block mx-5  transition-all duration-700 ${indexOpened === index ? "transform rotate-[360deg]" :""} `}>{indexOpened === index ? <FaMinus className='relative top-1 font-extralight text-lg' /> : <FaPlus />}</span>{faq.question}</p>
+                    <p onClick={()=>setIndexOpened(index)} className={`lg:whitespace-nowrap  text-xl md:text-2xl ${indexOpened === index && "text-burgundy" }`}><span className={`font-normal inline-block mx-5  transition-all duration-700 ${indexOpened === index ? "transform rotate-[360deg]" :""} `}>{indexOpened === index ? <FaMinus className='relative top-1 font-extralight text-lg' /> : <FaPlus />}</span>{faq.question}</p>
                     <p className={`text-gray-700 md:my-4 mb-4 ml-14 overflow-hidden transition-all duration-500 ease-in-out ${indexOpened !==index ? "h-0" :"h-12"}`}>{faq.answer}</p>
                     </div>
                 ))

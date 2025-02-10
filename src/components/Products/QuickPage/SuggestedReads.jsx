@@ -1,7 +1,7 @@
 import React from 'react'
-import Suggested1 from '../assets/images/suggested1.png'
-import Suggested2 from '../assets/images/suggested2.png'
-import Suggested3 from '../assets/images/suggested3.png'
+import Suggested1 from '../../../assets/images/Quick/suggested1.png'
+import Suggested2 from '../../../assets/images/Quick/suggested2.png'
+import Suggested3 from '../../../assets/images/Quick/suggested3.png'
 import { FaArrowRightLong } from "react-icons/fa6";
 
 function SuggestedReads() {

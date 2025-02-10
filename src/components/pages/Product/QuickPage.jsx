@@ -1,16 +1,16 @@
 import React,{useState,useEffect} from 'react'
-import Quick from '../assets/images/quick.png'
-import Navbar from './Navbar'
-import Navbar2 from './Navbar2';
-import Homepage  from '../assets/images/homepage.png'
-import Deliveries from './Deliveries';
-import QuickSteps from './QuickSteps';
-import SuggestedReads from './SuggestedReads';
-import FAQ from './FAQ';
-import Footer from './Footer';
+import Navbar from '../../Products/QuickPage/Navbar'
+import Navbar2 from '../../Products/QuickPage/Navbar2';
+import Homepage  from '../../../assets/images/Quick/homepage.png'
+import Deliveries from '../../Products/QuickPage/Deliveries';
+import QuickSteps from '../../Products/QuickPage/QuickSteps';
+import SuggestedReads from '../../Products/QuickPage/SuggestedReads';
+import FAQ from '../../Products/QuickPage/FAQ';
+import Footer from '../../Products/QuickPage/Footer';
+// import Footer from '../../Footer.jsx'
 
 
-function HomePage() {
+function QuickPage() {
 
 
   return (
@@ -49,4 +49,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default QuickPage

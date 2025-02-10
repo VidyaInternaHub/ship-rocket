@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import Quick from '../assets/images/quick.png'
+import Quick from '../../../assets/images/Quick/quick.png'
 
 function Navbar2() {
     const [isSticky, setIsSticky] = useState(false);

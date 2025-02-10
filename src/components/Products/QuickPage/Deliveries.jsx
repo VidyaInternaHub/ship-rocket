@@ -1,10 +1,10 @@
 import React from 'react'
-import Delivery1 from '../assets/images/delivery1.png'
-import Delivery2 from '../assets/images/delivery2.png'
-import Delivery3 from '../assets/images/delivery3.png'
-import Delivery4 from '../assets/images/delivery4.png'
-import Delivery5 from '../assets/images/delivery5.png'
-import Delivery6 from '../assets/images/delivery6.png'
+import Delivery1 from '../../../assets/images/Quick/delivery1.png'
+import Delivery2 from '../../../assets/images/Quick/delivery2.png'
+import Delivery3 from '../../../assets/images/Quick/delivery3.png'
+import Delivery4 from '../../../assets/images/Quick/delivery4.png'
+import Delivery5 from '../../../assets/images/Quick/delivery5.png'
+import Delivery6 from '../../../assets/images/Quick/delivery6.png'
 
 function Deliveries() {
   const deliverys = [
