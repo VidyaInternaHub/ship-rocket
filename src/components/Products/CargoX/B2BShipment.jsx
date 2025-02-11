@@ -3,16 +3,16 @@ import herobg from "../../../assets/CargoX/herobg.png";
 
 export const B2BShipment = () => {
   return (
-    <div className="grid sm:grid-row lg:grid-cols-2 items-center  my-28 ">
+    <div className="grid grid-row md:grid-cols-2 items-center  my-28 ">
       <div>
-        <h1 className=" text-5xl md:text-6xl lg:text-6xl  mb-6">
+        <h1 className="w-full md:w-[450px] lg:w-[500px]  text-6xl   mb-6">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-green-300  to-sky-300">
             Cross-border B2B{" "}
           </span>
           <span className="text-green-300">shipments</span>
           <span className="text-[#0B0757]">
             {" "}
-            in a <br /> click
+            in a click
           </span>
         </h1>
 

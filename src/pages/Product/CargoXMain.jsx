@@ -6,6 +6,9 @@ import { UnlockBetter } from "../../components/Products/CargoX/UnlockBetter";
 import { Unmatch } from "../../components/Products/CargoX/Unmact";
 import { Network } from "../../components/Products/CargoX/Network";
 import { ShippingPlan } from "../../components/Products/CargoX/ShippingPlan";
+import { Faqs } from "../../components/Products/CargoX/Faqs";
+import Footer from "../../components/Footer";
+import { Personalised } from "../../components/Products/CargoX/Personalised";
 
 export const CargoXMain = () => {
   return (
@@ -21,6 +24,9 @@ export const CargoXMain = () => {
         <Unmatch/>
         <Network/>
         <ShippingPlan/>
+        <Faqs/>
+        <Personalised/>
+        <Footer/>
 
         
       </div>

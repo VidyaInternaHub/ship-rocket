@@ -36,15 +36,15 @@ export const UnlockBetter = () => {
         </div>
 
         {/* Grid Section with UnlockCard and Image */}
-        <div className="grid grid-cols-2 gap-6 mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
           <div>
             <UnlockCard />
           </div>
-          <div>
+          <div className=" pt-0 lg:pt-30">
             <img
               src={unlockbg}
               alt="unlockbg"
-              className="transition-transform  hover:scale-105"
+              className="transition-transform mx-auto w-[450px]  lg:w-[500px] hover:scale-105 "
             />
           </div>
         </div>

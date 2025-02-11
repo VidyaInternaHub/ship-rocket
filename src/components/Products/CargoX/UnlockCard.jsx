@@ -7,7 +7,7 @@ export const UnlockCard = () => {
       {features.map((data, index) => (
         <div 
           key={index} 
-          className="my-4 px-6 py-8 w-[400px] rounded-xl bg-white border border-gray-200 
+          className="my-4 px-6 py-6 w-full mx-auto md:w-[630px] lg:w-[400px] rounded-xl bg-white border border-gray-200 
                      shadow-[4px_4px_10px_rgba(0,0,0,0.1),-4px_-4px_10px_rgba(255,255,255,0.5)] 
                      transition-transform duration-300 ease-in-out 
                      hover:scale-105 hover:shadow-[0px_10px_20px_rgba(0,0,0,0.2)] active:scale-95"
