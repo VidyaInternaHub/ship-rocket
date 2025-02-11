@@ -63,7 +63,7 @@ function Hero() {
 
   return (
     <div
-      className="relative overflow-hidden w-screen h-screen flex"
+      className="relative overflow-hidden w-screen h-screen flex container"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "contain",

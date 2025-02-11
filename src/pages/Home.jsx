@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Footer from "../components/Footer";
-import SuccessStory from "../components/home/SuccessStory"; 
+import SuccessStory from "../components/home/SuccessStory";
 import Hero from "../components/home/Hero";
 import StickySection from "../components/home/StickySection";
 import Innovations from "../components/home/Innovations";
 import Experience from "../components/home/Experience";
-import DigitalPlatform from "../components/home/DigitalPlatform"; 
+import DigitalPlatform from "../components/home/DigitalPlatform";
 import Developers from "../components/home/Developers";
 import Headlines from "../components/home/Headlines";
 import Blogs from "../components/home/Blogs";
@@ -16,7 +16,6 @@ import MobileNav from "../components/home/MobileNav";
 import OurSellers from "../components/home/OurSellers";
 import OurCoreStrengths from "../components/home/OurCoreStrengths";
 import BusinessesBenefit from "../components/home/BusinessesBenefit";
-
 
 function Home() {
   const [showFixedHeader, setShowFixedHeader] = useState(false);
@@ -39,11 +38,8 @@ function Home() {
 
   return (
     <div>
-      <div className="hidden md:flex">
-        <Header />
-      </div>
+      <Header />
       <MobileNav />
-      {showFixedHeader && <FixedHeader />}
       <Hero />
       <SuccessStory />
       <StickySection />

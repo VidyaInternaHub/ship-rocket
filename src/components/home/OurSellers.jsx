@@ -101,7 +101,7 @@ function OurSellers() {
       >
         {/* Background Overlay (For Opacity Effect) */}
         <div className="absolute inset-0 bg-zinc-200 opacity-80"></div>
-        <h1 className="relative z-30 w-fit text-3xl md:text-5xl py-6 text-left px-4 md:px-8 bg-zinc-200">
+        <h1 className="relative z-20 w-fit text-3xl md:text-5xl py-6 text-left px-4 md:px-8 bg-zinc-200">
           Anywhere, Anytime – With Your
           Choice of Courier Partners
         </h1>

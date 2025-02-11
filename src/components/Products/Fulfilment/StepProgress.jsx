@@ -120,10 +120,10 @@
 // }
 
 import { useState } from "react";
-import step1 from "../../assets/images/products/step1.svg";
-import step2 from "../../assets/images/products/step2.svg";
-import step3 from "../../assets/images/products/step3.svg";
-import { FaCheck } from "react-icons/fa";
+import step1 from "./../../../assets/images/products/step1.svg";
+import step2 from "./../../../assets/images/products/step2.svg";
+import step3 from "./../../../assets/images/products/step3.svg";
+
 
 const stepsConfig = [
   {

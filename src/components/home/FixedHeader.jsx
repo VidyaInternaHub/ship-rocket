@@ -14,11 +14,11 @@ function FixedHeader() {
   return (
     <motion.nav
       style={{ y, opacity }}
-      className="hidden md:flex justify-between bg-zinc-100 bg-opacity-0 backdrop-blur-2xl fixed top-2 left-1/2 transform -translate-x-1/2 py-3 p-4 w-14/15 rounded-full shadow-lg items-center z-50"
+      className="hidden md:flex justify-between bg-blend-color backdrop-blur-2xl fixed top-2 left-1/2 transform -translate-x-1/2 py-3 p-4 w-14/15 rounded-full shadow-lg items-center z-50"
     >
       <ul className="flex gap-4 items-center w-full">
         <li>
-          <Link to="/home">
+          <Link to="/">
             <img src={Logo} alt="Logo" className="w-9" />
           </Link>
         </li>

@@ -1,10 +1,10 @@
 import React from "react";
-import home1 from "../../assets/images/products/home-logo-1.svg";
-import home2 from "../../assets/images/products/home-logo-2.svg";
-import home3 from "../../assets/images/products/home-logo-3.svg";
-import home4 from "../../assets/images/products/home-logo-4.svg";
-import home5 from "../../assets/images/products/home-logo-5.svg";
-import home6 from "../../assets/images/products/home-logo-6.svg";
+import home1 from "./../../../assets/images/products/home-logo-1.svg";
+import home2 from "./../../../assets/images/products/home-logo-2.svg";
+import home3 from "./../../../assets/images/products/home-logo-3.svg";
+import home4 from "./../../../assets/images/products/home-logo-4.svg";
+import home5 from "./../../../assets/images/products/home-logo-5.svg";
+import home6 from "./../../../assets/images/products/home-logo-6.svg";
 
 const offerings = [
   {

@@ -1,4 +1,4 @@
-import heroVid from "../../assets/images/products/SRF_Banner_02.webm";
+import heroVid from "./../../../assets/images/products/SRF_Banner_02.webm";
 
 function Hero() {
   return (
