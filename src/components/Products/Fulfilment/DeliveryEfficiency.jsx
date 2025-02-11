@@ -1,4 +1,4 @@
-import DeliveryEfficiency from "../../assets/images/products/deliverEfficiency.webm";
+import DeliveryEfficiency from "./../../../assets/images/products/deliverEfficiency.webm";
 
 const efficiencies = [
   "20% lower shipping costs",

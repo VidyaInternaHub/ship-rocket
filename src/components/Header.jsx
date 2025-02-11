@@ -117,7 +117,7 @@ import React, { useState } from "react";
 import Logo from "../assets/images/brands/shiprocket_logo.svg";
 import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
-import ProductsLinkBox from "./Products/ProductsLinkBox";
+import ProductsLinkBox from "./Products/Fulfilment/ProductsLinkBox";
 
 const nav = [
   "Product",
@@ -145,7 +145,7 @@ function Header() {
             key={item}
             className="relative flex items-center gap-1 text-black cursor-pointer"
             onMouseEnter={() => setActiveDropdown(item)}
-            // onMouseLeave={() => setActiveDropdown(null)}
+            onMouseLeave={() => setActiveDropdown(null)}
           >
             {item}
             <FaChevronDown
@@ -177,7 +177,7 @@ function Header() {
 
 const Dropdown = ({ activeDropdown }) => {
   return (
-    <div className="fixed top-10 left-0 w-[500px] bg-white border border-gray-300 p-4 rounded shadow-lg z-50">
+    <div className="fixed top-20 left-0 w-full h-screen bg-white border border-gray-300 p-4 rounded shadow-lg z-50">
       {activeDropdown === "Product" && <ProductsLinkBox />}
       {activeDropdown === "Platform" && <div>Platform Content</div>}
       {activeDropdown === "Pricing" && <div>Pricing Content</div>}

@@ -109,14 +109,14 @@ const valueAddedServices = [
 
 function ProductsLinkBox() {
   return (
-    <div className="flex bg-white shadow-lg p-6 rounded-lg w-96">
+    <div className="flex bg-white shadow-lg rounded-lg w-96">
       {/* Products Section */}
-      <div className="bg-red-600 w-96">
+      <div className="w-96">
         <div className="flex">
           {Object.entries(productCategories).map(([category, items]) => (
             <div
               key={category}
-              className="mb-4 border-4 border-amber-400 space-x-44"
+              className="mb-4 space-x-44"
             >
               <h3 className="text-md text-zinc-200 w-fit bg-background-100">
                 {category}

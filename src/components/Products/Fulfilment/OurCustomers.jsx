@@ -1,32 +1,32 @@
 import React, { useState } from "react";
 
-import bluedart from "../../assets/images/digital-partners/bluedart.png";
-import delhivery from "../../assets/images/digital-partners/c2.png";
-import aramax from "../../assets/images/digital-partners/aramex.webp";
-import expressbees from "../../assets/images/digital-partners/c1.png";
-import dotzot from "../../assets/images/digital-partners/c5.png";
-import shadowfax from "../../assets/images/digital-partners/c6.png";
-import borzo from "../../assets/images/digital-partners/c9.png";
-import kerryexpress from "../../assets/images/digital-partners/c11.png";
-import blitz from "../../assets/images/digital-partners/ds.png";
-import dtdc from "../../assets/images/digital-partners/dtdc.png";
-import ecomexpress from "../../assets/images/digital-partners/ecomexpress.webp";
-import ekart from "../../assets/images/digital-partners/Group-9.png";
-import loadshare from "../../assets/images/digital-partners/loadshare.png";
+import bluedart from "./../../../assets/images/digital-partners/bluedart.png";
+import delhivery from "./../../../assets/images/digital-partners/c2.png";
+import aramax from "./../../../assets/images/digital-partners/aramex.webp";
+import expressbees from "./../../../assets/images/digital-partners/c1.png";
+import dotzot from "./../../../assets/images/digital-partners/c5.png";
+import shadowfax from "./../../../assets/images/digital-partners/c6.png";
+import borzo from "./../../../assets/images/digital-partners/c9.png";
+import kerryexpress from "./../../../assets/images/digital-partners/c11.png";
+import blitz from "./../../../assets/images/digital-partners/ds.png";
+import dtdc from "./../../../assets/images/digital-partners/dtdc.png";
+import ecomexpress from "./../../../assets/images/digital-partners/ecomexpress.webp";
+import ekart from "./../../../assets/images/digital-partners/Group-9.png";
+import loadshare from "./../../../assets/images/digital-partners/loadshare.png";
 
-import blur from "../../assets/images/sellers/Blur-black.png";
-import phool from "../../assets/images/sellers/logo-3.webp";
-import platinum from "../../assets/images/sellers/The-Platnum-Black.png";
-import adivasioil from "../../assets/images/sellers/Adivasi-Hair-Oil-Black.png";
-import adilkadriperfumes from "../../assets/images/sellers/Adilqadari-Balc.png";
+import blur from "./../../../assets/images/sellers/Blur-black.png";
+import phool from "./../../../assets/images/sellers/logo-3.webp";
+import platinum from "./../../../assets/images/sellers/The-Platnum-Black.png";
+import adivasioil from "./../../../assets/images/sellers/Adivasi-Hair-Oil-Black.png";
+import adilkadriperfumes from "./../../../assets/images/sellers/Adilqadari-Balc.png";
 
-import riya from "../../assets/images/sellers/riyapant.webp";
-import santosh from "../../assets/images/sellers/santosh.webp";
-import abhay from "../../assets/images/sellers/abhay.webp";
-import adivasi from "../../assets/images/sellers/adivasi.webp";
-import adilkadri from "../../assets/images/sellers/adilqadri.webp";
+import riya from "./../../../assets/images/sellers/riyapant.webp";
+import santosh from "./../../../assets/images/sellers/santosh.webp";
+import abhay from "./../../../assets/images/sellers/abhay.webp";
+import adivasi from "./../../../assets/images/sellers/adivasi.webp";
+import adilkadri from "./../../../assets/images/sellers/adilqadri.webp";
 
-import bgDots from "../../assets/images/backgrounds/dots.png";
+import bgDots from "./../../../assets/images/backgrounds/dots.png"
 
 // **1. Courier & Logistics Partners**
 const logisticsPartners = [
