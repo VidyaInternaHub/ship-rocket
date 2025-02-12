@@ -3,7 +3,7 @@ import React from "react";
 export const Update = () => {
   return (
     <>
-      <div className="relative mt-6 mb-10 py-14 bg-gradient-to-r from-blue-500 to-sky-300 rounded-lg flex justify-center items-center space-y-16 px-4 md:px-20 lg:px-28 mx-4 overflow-hidden ">
+      <div className="relative mb-10 py-14 bg-gradient-to-r from-blue-500 to-sky-300 rounded-lg flex justify-center items-center space-y-16 px-4 md:px-20 lg:px-28 mx-4 overflow-hidden ">
         <div className="flex flex-col justify-center items-center text-center space-y-4 w-full max-w-3xl">
           <div className="text-4xl md:text-5xl font-bold text-white">
             <h1>Never miss an update</h1>

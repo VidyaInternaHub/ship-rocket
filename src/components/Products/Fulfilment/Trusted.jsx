@@ -66,7 +66,7 @@ function Trusted() {
       </h1>
 
       {/* Marquee Container */}
-      <div className="flex flex-col md:flex-row gap-6 md:h-[400px] overflow-hidden">
+      <div className="flex flex-col md:flex-row gap-6 md:h-[400px] overflow-hidden ">
         <div className="flex md:flex-col gap-8">
           {brandsColumn1.map((logo, index) => (
             <div
