@@ -62,14 +62,14 @@ export const Cnav2 = () => {
     <div
       className={`flex justify-between items-center gap-x-4 mt-5 transition-all duration-300 ${
         scroll
-          ? "fixed top-0 w-full  xs:w-[93%] py-1 px-2 sm:w-[95%] md:w-[96%]  lg:w-[97%] bg-[#F9F7FB] rounded-full shadow-lg"
+          ? "fixed top-0   w-[100%] py-1 px-2  sm:w-[91%]  md:w-[93%] lg:w-[95%] bg-[#F9F7FB] rounded-full shadow-lg"
           : "-top-2 bg-transparent"
       }`}
     >
       <div>
-        <a href="/" className="text-gray-500 hover:text-gray-700">
+        <a href="/" className=" text-gray-500 hover:text-gray-700">
           <img
-            className="w-[120px] min-w-[120px] max-w-[120px] h-auto"
+            className=" w-[100px] h-[40px]  sm:max-w-[120px] sm:h-auto"
             src={cargologo}
             alt="CargoxLogo"
           />
@@ -98,7 +98,7 @@ export const Cnav2 = () => {
       {/* Start Shipping Now Button */}
       <div>
       <Link
-        className={`shrink-0 bg-purple-500 text-white px-2 py-2 xs:text-xs sm:text-sm rounded-2xl md:rounded `}
+        className={` shrink-0 bg-purple-500 text-white px-2 py-2 xs:text-xs sm:text-sm rounded-2xl md:rounded `}
       >
         Try for free
       </Link>

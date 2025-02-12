@@ -13,10 +13,10 @@ import { Personalised } from "../../components/Products/CargoX/Personalised";
 export const CargoXMain = () => {
   return (
     <>
-      <div className="mx-4 ">
+      <div className="mx-0 sm:mx-4 ">
         {/* nav start  */}
         <Cnav1 />
-        <div className="px-4 bg-gradient-to-tr from-white via-[#e6f7eb] to-[#d1ecfd] pb-2">
+        <div className="mx-0 sm:mx-4 bg-gradient-to-tr from-white via-[#e6f7eb] to-[#d1ecfd] pb-2">
           <Cnav2 />
           <B2BShipment />
         </div>
