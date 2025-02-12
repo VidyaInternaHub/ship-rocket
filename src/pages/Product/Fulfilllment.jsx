@@ -12,22 +12,24 @@ import OurExpert from "../../components/Products/Fulfilment/OurExpert";
 import { AlwaysStay } from "../../components/Products/DomesticPage/AlwaysStay";
 import { Update } from "../../components/Products/Fulfilment/Update";
 import OurBlog from "../../components/Products/Fulfilment/OurBlog";
+import Navbar from "../../components/Products/Fulfilment/Navbar";
 
 function Fulfilllment() {
   return (
     <div>
       <Header />
-      <Hero/>
-      <OurOffering/>
-      <TechDriven/>
-      <DeliveryEfficiency/>
-      <FastDelivery/>
+      <Navbar />
+      <Hero />
+      <OurOffering />
+      <TechDriven />
+      <DeliveryEfficiency />
+      <FastDelivery />
       <OurCustomers />
-      <Trusted/>
-      <StepProgress/>
-      <OurExpert/>
-      <OurBlog/>
-      <Update/>
+      <Trusted />
+      <StepProgress />
+      <OurExpert />
+      <OurBlog />
+      <Update />
       <Footer />
     </div>
   );

@@ -194,12 +194,13 @@
 
 import React, { useEffect, useState } from "react";
 import Logo from "../assets/images/brands/shiprocket_logo.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
 import ProductsLinkBox from "./Products/Fulfilment/ProductsLinkBox";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { RiMenu3Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
+import useRouteStatus from "../hooks/useRouteStatus";
 
 const nav = [
   "Product",
@@ -213,6 +214,11 @@ const nav = [
 function Header() {
   const [showFixedHeader, setShowFixedHeader] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const location = useLocation();
+
+  const { isFulfillment, isQuick, isDemosticShopping } = useRouteStatus();
+
+  const routeStatus = isFulfillment || isQuick || isDemosticShopping;
 
   const { scrollY } = useScroll();
 
@@ -222,7 +228,8 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (location.pathname === "/fulfillment") setShowFixedHeader(false);
+      else if (window.scrollY > 50) {
         setShowFixedHeader(true);
       } else {
         setShowFixedHeader(false);
@@ -239,6 +246,8 @@ function Header() {
     <>
       <motion.nav
         className={` p-4 w-full justify-between items-center relative hidden md:flex ${
+          routeStatus ? "border-b-2 border-dotted border-zinc-200" : ""
+        } ${
           showFixedHeader
             ? "bg-[#ffffffa5] backdrop-blur-xs sticky top-2 py-3 p-4 w-14/15 rounded-full shadow-lg items-center z-30"
             : "bg-white"
