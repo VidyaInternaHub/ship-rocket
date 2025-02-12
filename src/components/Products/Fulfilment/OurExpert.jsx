@@ -13,7 +13,7 @@ function OurExpert() {
               know more?
             </span>
           </h1>
-          <button className="bg-white px-8 p-4 font-bold rounded-lg">Talk to an expert</button>
+          <button className="text-lg bg-white px-20 py-4 font-bold rounded-lg">Talk to an expert</button>
         </div>
         <img className="h-88 w-80 -mt-5" src={expertImg} alt="expert image" />
       </div>

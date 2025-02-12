@@ -54,9 +54,10 @@ const brandsColumn2 = [
 ];
 
 function Trusted() {
+  
   return (
-    <div className="flex flex-col items-center w-full h-screen px-4 md:px-16">
-      <h1 className="text-5xl text-blue-950 font-bold mb-12">
+    <div className="flex flex-col md:flex-row items-center w-full h-screen px-4 md:px-16 overflow-hidden">
+      <h1 className="text-5xl text-blue-950 font-bold mb-12 w-4/7">
         Trusted by{" "}
         <span className="bg-gradient-to-r from-blue-700 to-sky-300 text-transparent bg-clip-text">
           1000+
@@ -65,12 +66,12 @@ function Trusted() {
       </h1>
 
       {/* Marquee Container */}
-      <div className="flex flex-col gap-6">
-        <div className="flex gap-2">
+      <div className="flex flex-col md:flex-row gap-6 md:h-[400px] overflow-hidden">
+        <div className="flex md:flex-col gap-8">
           {brandsColumn1.map((logo, index) => (
             <div
               key={index}
-              className="w-44 h-20 flex items-center justify-center bg-white rounded-lg shadow-md mx-auto p-2 ml-6 animate-marquee"
+              className="w-44 h-20 flex items-center justify-center bg-white rounded-lg shadow-md mx-auto p-2 ml-6 animate-marquee md:animate-marquee-vertical"
             >
               <img
                 src={logo}
@@ -83,18 +84,18 @@ function Trusted() {
 
         {/* Right Vertical Marquee (Reverse Direction) */}
 
-        <div className="flex gap-2">
+        <div className="flex md:flex-col gap-8">
           {brandsColumn2.map((logo, index) => (
             <div
               key={index}
-              className="w-44 h-20 flex items-center justify-center bg-white rounded-lg shadow-md mx-auto p-2 ml-6 animate-marquee-reverse"
+              className="w-44 h-20 flex items-center justify-center bg-white rounded-lg shadow-md mx-auto p-2 ml-6 animate-marquee-reverse md:animate-marquee-vertical-reverse"
             >
               <img
                 src={logo}
                 alt={`Brand ${index + 13}`}
                 className="w-28 h-16 object-contain"
               />
-            </div>      
+            </div>
           ))}
         </div>
       </div>
