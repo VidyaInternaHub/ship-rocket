@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import cargologo from '../../../assets/CargoX/cargox.svg'
+import cargologo from '../../../assets/images/CargoX/cargox.svg'
 
 export const Cnav2 = () => {
   const [scroll, setScroll] = useState(false);

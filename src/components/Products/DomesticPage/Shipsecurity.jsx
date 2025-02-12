@@ -1,7 +1,7 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
-import securitybg from "../../../assets/Domestic/securitybg.webp";
+import securitybg from "../../../assets/images/Domestic/securitybg.webp";
 
 export const Shipsecurity = () => {
   return (

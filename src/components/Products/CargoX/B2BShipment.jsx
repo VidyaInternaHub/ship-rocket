@@ -1,5 +1,5 @@
 import React from "react";
-import herobg from "../../../assets/CargoX/herobg.png";
+import herobg from "../../../assets/images/CargoX/herobg.png";
 
 export const B2BShipment = () => {
   return (

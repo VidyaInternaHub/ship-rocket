@@ -1,7 +1,5 @@
 import React from "react";
-import { GoArrowUpRight } from "react-icons/go";
-import { Link } from "react-router-dom";
-import networkbg from "../../../assets/CargoX/networkbg.png";
+import networkbg from "../../../assets/images/CargoX/networkbg.png";
 
 export const Network = () => {
   return (

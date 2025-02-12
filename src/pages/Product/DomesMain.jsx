@@ -27,7 +27,7 @@ import { AlwaysStay } from "../../components/Products/DomesticPage/AlwaysStay";
 
 function DomesMain() {
   return (
-    <div className=" mx-4 ">
+    <div className=" mx-0 sm:mx-4 ">
       {/* top section/ offer */}
       <TopOffer />
       {/* Main Content */}
@@ -36,7 +36,7 @@ function DomesMain() {
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-100 to-orange-100 -z-10 transform -skew-y-4 origin-top-left"></div>
 
         {/* Main Content (Not Skewed) */}
-        <div className=" max-w-full   pb-8">
+        <div className=" mx-0 sm:mx-4   pb-8">
           <Nav1 />
           <Nav2 />
           <Hero />

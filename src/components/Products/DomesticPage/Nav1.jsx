@@ -1,11 +1,9 @@
 import React from "react";
 // import Logo from "../assets/Domestic/shiprocket_logo.svg";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 
 function Nav1() {
-
-  const location = useLocation();
   return (
     <nav
       className={`border-b-2  border-dotted border-gray-400 w-full mb-3 
@@ -39,7 +37,6 @@ function Nav1() {
           </div>
 
           {/* Buttons */}
-          {location.pathname === "/cargox" || location.pathname === "/shipx" ? null : (
   <div className="space-x-3">
     <button className="border border-blue-600 w-24 text-blue-600 p-2 rounded-full">
       Log In
@@ -48,7 +45,7 @@ function Nav1() {
       Try for free
     </button>
   </div>
-)}
+
 
         </div>
       </div>

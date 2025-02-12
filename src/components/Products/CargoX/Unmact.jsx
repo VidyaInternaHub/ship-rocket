@@ -1,5 +1,5 @@
 import React from "react";
-import compliabg from "../../../assets/CargoX/compliancebg.png";
+import compliabg from "../../../assets/images/CargoX/compliancebg.png";
 
 export const Unmatch = () => {
   return (

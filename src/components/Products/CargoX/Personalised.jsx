@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from '../../../assets/CargoX/curlyArrow.png';
+import arrow from '../../../assets/images/CargoX/curlyArrow.png';
 
 export const Personalised = () => {
   return (

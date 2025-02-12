@@ -1,9 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import cargologo from '../../../assets/CargoX/cargox.svg'
-import shipx from '../../../assets/CargoX/herobg.png'
+// import cargologo from '../../../assets/images/CargoX/cargox.svg'
+// import shipx from '../../../assets/images/CargoX/herobg.png'
 
-const productnav = [ {logo:[cargologo,shipx]}]
 
 export const Nav2 = () => {
   const [scroll, setScroll] = useState(false);
@@ -65,7 +64,7 @@ export const Nav2 = () => {
     <div
       className={`flex justify-between items-center gap-x-4 mt-5 transition-all duration-300 ${
         scroll
-          ? "fixed top-0 w-full  xs:w-[93%] py-1 px-2 sm:w-[95%] md:w-[96%]  lg:w-[97%] bg-[#F9F7FB] rounded-full shadow-lg"
+          ? "fixed top-0  w-[100%] py-1 px-2  sm:w-[91%]  md:w-[93%] lg:w-[95%] bg-[#F9F7FB] rounded-full shadow-lg"
           : "-top-2 bg-transparent"
       }`}
     >

@@ -1,5 +1,5 @@
 import React from "react";
-import shipplabg from "../../../assets/CargoX/shipplanbg.webp";
+import shipplabg from "../../../assets/images/CargoX/shipplanbg.webp";
 
 export const ShippingPlan = () => {
   return (

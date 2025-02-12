@@ -1,4 +1,4 @@
-import icon from '../../../assets/CargoX/tick.svg';
+import icon from '../../../assets/images/CargoX/tick.svg';
 
 const features = [
   {

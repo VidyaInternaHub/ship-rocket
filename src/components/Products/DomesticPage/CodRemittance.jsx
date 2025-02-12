@@ -1,7 +1,7 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
-import Codbg from "../../../assets/Domestic/Codbg.webp";
+import Codbg from "../../../assets/images/Domestic/Codbg.webp";
 
 export const CodRemittance = () => {
   return (

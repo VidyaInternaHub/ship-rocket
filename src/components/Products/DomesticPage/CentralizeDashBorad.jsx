@@ -1,7 +1,7 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
-import centradashbg from "../../../assets/Domestic/centraDashbg.webp";
+import centradashbg from "../../../assets/images/Domestic/centraDashbg.webp";
 
 export const CentralizeDashBorad = () => {
   return (

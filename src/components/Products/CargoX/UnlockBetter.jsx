@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import unlockbg from '../../../assets/CargoX/unlockbg.webp'
+import unlockbg from '../../../assets/images/CargoX/unlockbg.webp'
 import { UnlockCard } from "./UnlockCard";
 
 export const UnlockBetter = () => {
