@@ -62,7 +62,7 @@ export const Cnav2 = () => {
     <div
       className={`flex justify-between items-center gap-x-4 mt-5 transition-all duration-300 ${
         scroll
-          ? "fixed top-0   w-[100%] py-1 px-2  sm:w-[91%]  md:w-[93%] lg:w-[95%] bg-[#F9F7FB] rounded-full shadow-lg"
+          ? "fixed top-0   w-[100%] py-2 px-2  sm:w-[91%]  md:w-[93%] lg:w-[95%] bg-[#F9F7FB] rounded-full shadow-lg"
           : "-top-2 bg-transparent"
       }`}
     >
@@ -98,7 +98,7 @@ export const Cnav2 = () => {
       {/* Start Shipping Now Button */}
       <div>
       <Link
-        className={` shrink-0 bg-purple-500 text-white px-2 py-2 xs:text-xs sm:text-sm rounded-2xl md:rounded `}
+        className={` shrink-0 bg-purple-500 text-white px-2 py-2 xs:text-xs sm:text-sm rounded-full`}
       >
         Try for free
       </Link>
