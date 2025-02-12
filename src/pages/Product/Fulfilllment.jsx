@@ -9,6 +9,9 @@ import OurOffering from "../../components/Products/Fulfilment/OurOffering";
 import TechDriven from "../../components/Products/Fulfilment/TechDriven";
 import Trusted from "../../components/Products/Fulfilment/Trusted";
 import OurExpert from "../../components/Products/Fulfilment/OurExpert";
+import { AlwaysStay } from "../../components/Products/DomesticPage/AlwaysStay";
+import { Update } from "../../components/Products/Fulfilment/Update";
+import OurBlog from "../../components/Products/Fulfilment/OurBlog";
 
 function Fulfilllment() {
   return (
@@ -23,6 +26,8 @@ function Fulfilllment() {
       <Trusted/>
       <StepProgress/>
       <OurExpert/>
+      <OurBlog/>
+      <Update/>
       <Footer />
     </div>
   );
