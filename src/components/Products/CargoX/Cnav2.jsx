@@ -60,27 +60,31 @@ export const Cnav2 = () => {
 
   return (
     <div
-      className={`flex justify-between items-center gap-x-4 mt-5 transition-all duration-300 ${
+      className={`flex justify-between items-center   gap-x-4 mt-5 transition-all duration-300 ${
         scroll
-          ? "fixed top-0 z-50  w-[100%] py-2 px-2  sm:w-[91%]  md:w-[93%] lg:w-[95%] bg-[#F9F7FB] rounded-full shadow-lg"
+          ? "fixed top-0 z-50  w-[100%] py-2 px-2  sm:w-[91%]    md:w-[93%] lg:w-[95%] bg-[#F9F7FB] rounded-full shadow-lg"
           : "-top-2 bg-transparent"
       }`}
     >
       <div>
         <a href="/" className=" text-gray-500 hover:text-gray-700">
           <img
-            className=" w-[100px] h-[40px]  sm:max-w-[120px] sm:h-auto"
+            className=" w-[100px]   h-[40px]  sm:max-w-[120px] sm:h-auto"
             src={cargologo}
             alt="CargoxLogo"
           />
         </a>
       </div>
 
+      
+
+
+
       {/* Links (Horizontally Scrollable on Small Screens) */}
         <div className="flex">
         <div
         ref={scrollRef}
-        className={`flex overflow-x-auto items-center text-[#0B0757] lg:overflow-visible whitespace-nowrap scroll-smooth cursor-grab space-x-2 px-4 transition-opacity duration-300 ${
+        className={`flex overflow-x-auto items-center text-[#0B0757] lg:overflow-visible whitespace-nowrap scroll-smooth cursor-grab space-x-3 px-4 transition-opacity duration-300 ${
           hideNavlinks ? "opacity-0 md:opacity-100" : "opacity-100"
         }`}
       >

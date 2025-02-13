@@ -54,7 +54,7 @@ function Cnav1() {
       } ${
         showFixedHeader
           ? "bg-[#ffffffa5] backdrop-blur-xs  top-2 py-3 p-4 w-14/15 rounded-full shadow-lg items-center z-30"
-          : ""
+          : " "
       }`}
       initial={{ y: 0, opacity: 1 }}
       animate={{ y, opacity }}
