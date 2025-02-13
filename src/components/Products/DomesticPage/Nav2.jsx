@@ -82,7 +82,7 @@ export const Nav2 = () => {
         <div className="flex">
         <div
         ref={scrollRef}
-        className={`flex overflow-x-auto items-center text-[#0B0757] lg:overflow-visible whitespace-nowrap scroll-smooth cursor-grab space-x-2 px-4 transition-opacity duration-300 ${
+        className={`flex overflow-x-auto items-center text-[#0B0757] lg:overflow-visible whitespace-nowrap scroll-smooth cursor-grab space-x-3 px-4 transition-opacity duration-300 ${
           hideNavlinks ? "opacity-0 md:opacity-100" : "opacity-100"
         }`}
       >
