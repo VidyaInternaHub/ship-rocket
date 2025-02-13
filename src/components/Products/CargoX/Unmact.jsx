@@ -5,7 +5,7 @@ export const Unmatch = () => {
   return (
     <div className="mx-8 mt-12">
        {/* Main Heading */}
-       <h1 className="text-5xl font-semibold drop-shadow-[4px_4px_0px_rgba(0,0,0,0.2)]">
+       <h1 className=" text-5xl font-semibold drop-shadow-[4px_4px_0px_rgba(0,0,0,0.2)]">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-green-300 to-sky-300">
               Unmatched features
               </span>

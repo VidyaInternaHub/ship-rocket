@@ -24,6 +24,7 @@ import { TrustedBy } from "../../components/Products/DomesticPage/TrustedBy";
 import { HowWorks } from "../../components/Products/DomesticPage/HowWorks";
 import { ExploreBlog } from "../../components/Products/DomesticPage/ExploreBlog";
 import { AlwaysStay } from "../../components/Products/DomesticPage/AlwaysStay";
+import Header from "../../components/Header";
 
 function DomesMain() {
   return (
@@ -37,7 +38,8 @@ function DomesMain() {
 
         {/* Main Content (Not Skewed) */}
         <div className=" mx-0 sm:mx-4   pb-8">
-          <Nav1 />
+          {/* <Nav1 /> */}
+          <Header/>
           <Nav2 />
           <Hero />
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Cnav1 from "../../components/Products/CargoX/Cnav1";
+import Header from '../../components/Header'
 import { Cnav2 } from "../../components/Products/CargoX/Cnav2";
 import { B2BShipment } from "../../components/Products/CargoX/B2BShipment";
 import { UnlockBetter } from "../../components/Products/CargoX/UnlockBetter";
@@ -17,7 +18,7 @@ export const CargoXMain = () => {
         {/* nav start  */}
        <div className="bg-gradient-to-tr from-white via-[#e6f7eb] to-[#d1ecfd] max-w-full">
        <div className="mx-0 sm:mx-4  pb-2">
-        <Cnav1 />
+        <Cnav1/>
           <Cnav2 />
           <B2BShipment />
         </div>

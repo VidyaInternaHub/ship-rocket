@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-body {
+body,html {
   font-family: var(--font-TWKLausanne), sans-serif;
 }
 
