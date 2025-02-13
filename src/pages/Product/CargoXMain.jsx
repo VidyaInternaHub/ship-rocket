@@ -16,7 +16,7 @@ export const CargoXMain = () => {
     <>
       <div className="mx-0 sm:mx-4 ">
         {/* nav start  */}
-       <div className="bg-gradient-to-tr from-white via-[#e6f7eb] to-[#d1ecfd] max-w-full">
+       <div className="bg-gradient-to-tr from-white via-[#e6f7eb]   to-[#d1ecfd] max-w-full">
        <div className="mx-0 sm:mx-4  pb-2">
         <Cnav1/>
           <Cnav2 />
