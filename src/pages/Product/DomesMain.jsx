@@ -24,10 +24,11 @@ import { TrustedBy } from "../../components/Products/DomesticPage/TrustedBy";
 import { HowWorks } from "../../components/Products/DomesticPage/HowWorks";
 import { ExploreBlog } from "../../components/Products/DomesticPage/ExploreBlog";
 import { AlwaysStay } from "../../components/Products/DomesticPage/AlwaysStay";
+import Header from "../../components/Header";
 
 function DomesMain() {
   return (
-    <div className=" mx-4 ">
+    <div className=" mx-0 sm:mx-4 ">
       {/* top section/ offer */}
       <TopOffer />
       {/* Main Content */}
@@ -36,8 +37,9 @@ function DomesMain() {
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-100 to-orange-100 -z-10 transform -skew-y-4 origin-top-left"></div>
 
         {/* Main Content (Not Skewed) */}
-        <div className=" max-w-full   pb-8">
-          <Nav1 />
+        <div className=" mx-0 sm:mx-4   pb-8">
+          {/* <Nav1 /> */}
+          <Header/>
           <Nav2 />
           <Hero />
         </div>

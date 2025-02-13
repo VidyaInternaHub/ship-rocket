@@ -1,7 +1,7 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
-import returnbg from "../../../assets/Domestic/Returnbg.webp";
+import returnbg from "../../../assets/images/Domestic/Returnbg.webp";
 
 export const EasyReturn = () => {
   return (

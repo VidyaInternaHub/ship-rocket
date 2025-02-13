@@ -6,7 +6,7 @@ const useRouteStatus = () => {
   const isQuick = location.pathname === "/quick";
   const isDemosticShopping = location.pathname === "/domestic-shipping";
   const isFulfillment = location.pathname === "/fulfillment";
-  const cargoX = location.pathname === "/cargoX";
+  const cargoX = location.pathname === "/cargox";
 
 
   return { isQuick, isDemosticShopping, isFulfillment,cargoX };

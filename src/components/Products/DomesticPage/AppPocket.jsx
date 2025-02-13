@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { IoMdCheckmark } from "react-icons/io";
 import { GrApple } from "react-icons/gr";
 import { BiLogoPlayStore } from "react-icons/bi";
-import pocketappbg from "../../../assets/Domestic/pocketappbg.webp";
+import pocketappbg from "../../../assets/images/Domestic/pocketappbg.webp";
 
 export const AppPocket = () => {
   return (

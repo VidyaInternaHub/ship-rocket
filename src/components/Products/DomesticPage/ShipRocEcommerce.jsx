@@ -1,7 +1,7 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
-import businessimg from "../../../assets/Domestic/bussinessbg.webp";
+import businessimg from "../../../assets/images/Domestic/bussinessbg.webp";
 
 export const ShipRocEcommerce = () => {
   return (

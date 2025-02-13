@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Car1, Car2, Car3, Car4, Car5 } from "./CustomerCard"; // Import individual components
 import { NavLink } from "react-router-dom";
-import icon1 from "../../../assets/Domestic/cars.png";
-import icon2 from "../../../assets/Domestic/car2.png";
-import icon3 from "../../../assets/Domestic/car3.png";
-import icon4 from "../../../assets/Domestic/car4.png";
-import icon5 from "../../../assets/Domestic/car5.png";
+import icon1 from "../../../assets/images/Domestic/cars.png";
+import icon2 from "../../../assets/images/Domestic/car2.png";
+import icon3 from "../../../assets/images/Domestic/car3.png";
+import icon4 from "../../../assets/images/Domestic/car4.png";
+import icon5 from "../../../assets/images/Domestic/car5.png";
 
 export const CustomerSaying = () => {
   const [tab, setTab] = useState(1);

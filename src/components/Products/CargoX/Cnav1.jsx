@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import Logo from "../assets/images/brands/shiprocket_logo.svg";
+import Logo from "../../../assets/images/brands/shiprocket_logo.svg";
 import { Link, useLocation } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
-import ProductsLinkBox from "./Products/Fulfilment/ProductsLinkBox";
+import ProductsLinkBox from "../../Products/Fulfilment/ProductsLinkBox";
 import { motion, useScroll, useTransform } from "framer-motion";
-import useRouteStatus from "../hooks/useRouteStatus";
+import useRouteStatus from "../../../hooks/useRouteStatus";
 
 const nav = [
   "Product",
@@ -15,7 +15,7 @@ const nav = [
   "Resource",
 ];
 
-function Header() {
+function Cnav1() {
   const [showFixedHeader, setShowFixedHeader] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const location = useLocation();
@@ -23,10 +23,7 @@ function Header() {
   const { isFulfillment, isQuick, isDemosticShopping, cargoX } =
     useRouteStatus();
 
-  const routeStatus = isFulfillment || isQuick || cargoX || isDemosticShopping  ;
-
-
-  console.log(cargoX)
+  const routeStatus = isFulfillment || isQuick || isDemosticShopping || cargoX;
 
   const { scrollY } = useScroll();
 
@@ -53,10 +50,10 @@ function Header() {
   return (
     <motion.nav
       className={` p-4 w-full justify-between items-center relative hidden md:flex ${
-        routeStatus ? "border-b-2 border-dashed border-zinc-200 bg-transparent" : ""
+        routeStatus ? "border-b-2 border-dashed border-zinc-200 bg-transparent"  : ""
       } ${
         showFixedHeader
-          ? "bg-[#ffffffa5] backdrop-blur-xs sticky top-2 py-3 p-4 w-14/15 rounded-full shadow-lg items-center z-30"
+          ? "bg-[#ffffffa5] backdrop-blur-xs  top-2 py-3 p-4 w-14/15 rounded-full shadow-lg items-center z-30"
           : ""
       }`}
       initial={{ y: 0, opacity: 1 }}
@@ -140,4 +137,4 @@ const Dropdown = ({ activeDropdown }) => {
   );
 };
 
-export default Header;
+export default Cnav1;

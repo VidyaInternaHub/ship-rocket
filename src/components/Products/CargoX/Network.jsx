@@ -1,9 +1,7 @@
 import React from "react";
-import { GoArrowUpRight } from "react-icons/go";
-import { Link } from "react-router-dom";
-import securitybg from "../../../assets/images/Domestic/securitybg.webp";
+import networkbg from "../../../assets/images/CargoX/networkbg.png";
 
-export const Shipsecurity = () => {
+export const Network = () => {
   return (
     <div className="max-w-full mx-8 pt-6">
       {/* Content Grid */}
@@ -13,24 +11,18 @@ export const Shipsecurity = () => {
         <div className="order-2 sm:order-2 md:order-1 flex justify-center md:justify-start">
           <img
             className="w-full md:w-[350px] lg:w-[450px] h-auto"
-            src={securitybg}
+            src={networkbg}
             alt="Security Background"
           />
         </div>
 
         {/* Content Section - Default: Right | Small screens (sm) par pehle dikhayenge */}
         <div className="order-1 sm:order-1 md:order-2 space-y-4">
-          <h1 className="text-3xl lg:text-5xl">Shipment security cover</h1>
-          <p className="text-gray-700 text-lg tracking-tight py-2 mx-2 font-TWKLausanne">
-            No more processing your return orders manually. Automate them <br />{" "}
-            via workflows and remain stress-free.
+          <h1 className="text-3xl lg:text-5xl">Worldwide Network</h1>
+          <p className="text-gray-400 text-lg tracking-tight py-2 mx-2 font-TWKLausanne">
+          We bring the world within your reach. With a coverage of over 100 countries, spread your business with seamless customs.
           </p>
-          <div className="text-purple-600 text-lg mt-6">
-            <Link className="inline-flex items-center gap-x-1">
-              Know more
-              <GoArrowUpRight className="text-xl" />
-            </Link>
-          </div>
+
         </div>
 
       </div>

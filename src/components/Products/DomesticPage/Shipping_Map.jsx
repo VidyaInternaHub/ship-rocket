@@ -1,7 +1,7 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
-import mapimg from "../../../assets/Domestic/map.webp";
+import mapimg from "../../../assets/images/Domestic/map.webp";
 
 export const Shipping_Map = () => {
   return (
