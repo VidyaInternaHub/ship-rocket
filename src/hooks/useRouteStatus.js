@@ -4,11 +4,19 @@ const useRouteStatus = () => {
   const location = useLocation();
 
   const isQuick = location.pathname === "/quick";
-  const isDemosticShopping = location.pathname === "/domestic-shipping";
+  const isDomesticShipping = location.pathname === "/domestic-shipping";
+  const isCargoShipping = location.pathname === "/cargo-shipping";
   const isFulfillment = location.pathname === "/fulfillment";
-  const cargoX = location.pathname === "/cargoX";
+  const shipX = location.pathname === "/shipx";
+  const cargoX = location.pathname === "/cargox";
 
-
-  return { isQuick, isDemosticShopping, isFulfillment,cargoX };
+  return {
+    isQuick,
+    isDomesticShipping,
+    isCargoShipping,
+    isFulfillment,
+    cargoX,
+    shipX,
+  };
 };
 export default useRouteStatus;

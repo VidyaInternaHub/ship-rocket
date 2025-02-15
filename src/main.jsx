@@ -8,6 +8,7 @@ import Home from "./pages/Home.jsx";
 import DomesMain from "./pages/Product/DomesMain.jsx";
 import QuickPage from "./pages/Product/QuickPage.jsx";
 import CargoShipping from "./pages/Product/CargoShipping.jsx";
+import ShipX from "./pages/Product/ShipX.jsx";
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,8 @@ const router = createBrowserRouter([
   { path: "/fulfillment", element: <Fulfilllment /> },
   { path: "/quick", element: <QuickPage /> },
   { path: "/cargo-shipping", element: <CargoShipping /> },
+  { path: "/shipx", element: <ShipX/> },
+  { path: "/cargox", element: <>Cargox</> },
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
