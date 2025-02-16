@@ -38,7 +38,8 @@ function Home() {
 
   return (
     <div>
-      <Header />
+      
+      {/* <Header /> */}
       <MobileNav />
       <Hero />
       <SuccessStory />
