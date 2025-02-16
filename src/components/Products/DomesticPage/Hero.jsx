@@ -1,5 +1,5 @@
 import React from "react";
-import bgimg from "../../../assets/Domestic/domesbg.webp";
+import bgimg from "../../../assets/images/Domestic/domesbg.webp";
 
 export const Hero = () => {
   return (

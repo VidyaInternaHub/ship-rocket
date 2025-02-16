@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import blog1 from '../../../assets/Domestic/blog1.png';
-import blog2 from '../../../assets/Domestic/blog2.jpg';
-import blog3 from '../../../assets/Domestic/blog3.jpg';
+import blog1 from '../../../assets/images/Domestic/blog1.png';
+import blog2 from '../../../assets/images/Domestic/blog2.jpg';
+import blog3 from '../../../assets/images/Domestic/blog3.jpg';
 import { NavLink } from 'react-router-dom';
 
 export const BlogCard = () => {

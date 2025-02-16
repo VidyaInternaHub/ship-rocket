@@ -1,9 +1,9 @@
-import tech1 from '../../../assets/Domestic/tech1.svg'
-import tech2 from '../../../assets/Domestic/tech2.svg'
-import tech3 from '../../../assets/Domestic/tech3.svg'
-import tech4 from '../../../assets/Domestic/tech4.svg'
-import tech5 from '../../../assets/Domestic/tech5.svg'
-import tech6 from '../../../assets/Domestic/tech6.svg'
+import tech1 from '../../../assets/images/Domestic/tech1.svg'
+import tech2 from '../../../assets/images/Domestic/tech2.svg'
+import tech3 from '../../../assets/images/Domestic/tech3.svg'
+import tech4 from '../../../assets/images/Domestic/tech4.svg'
+import tech5 from '../../../assets/images/Domestic/tech5.svg'
+import tech6 from '../../../assets/images/Domestic/tech6.svg'
 
 export const Data=[
     {

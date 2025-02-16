@@ -1,11 +1,11 @@
 import React from "react";
-import icon1 from "../../../assets/Domestic/partner1.webp";
-import icon2 from "../../../assets/Domestic/partner2.webp";
-import icon3 from "../../../assets/Domestic/partner3.png";
-import icon4 from "../../../assets/Domestic/partner4.png";
-import icon5 from "../../../assets/Domestic/partner5.png";
-import icon6 from "../../../assets/Domestic/partner6.webp";
-import icon7 from "../../../assets/Domestic/partner7.webp";
+import icon1 from "../../../assets/images/Domestic/partner1.webp";
+import icon2 from "../../../assets/images/Domestic/partner2.webp";
+import icon3 from "../../../assets/images/Domestic/partner3.png";
+import icon4 from "../../../assets/images/Domestic/partner4.png";
+import icon5 from "../../../assets/images/Domestic/partner5.png";
+import icon6 from "../../../assets/images/Domestic/partner6.webp";
+import icon7 from "../../../assets/images/Domestic/partner7.webp";
 
 
 export const TrustedBy = () => {

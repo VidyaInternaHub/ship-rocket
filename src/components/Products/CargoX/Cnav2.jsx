@@ -1,10 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-// import cargologo from '../../../assets/images/CargoX/cargox.svg'
-// import shipx from '../../../assets/images/CargoX/herobg.png'
+import cargologo from '../../../assets/images/CargoX/cargox.svg'
 
-
-export const Nav2 = () => {
+export const Cnav2 = () => {
   const [scroll, setScroll] = useState(false);
   const [hideNavlinks, setHideNavlinks] = useState(false);
   const scrollRef = useRef(null);
@@ -62,21 +60,25 @@ export const Nav2 = () => {
 
   return (
     <div
-      className={`flex justify-between items-center gap-x-4 mt-5 transition-all duration-300  ${
+      className={`flex justify-between items-center   gap-x-4 mt-5 transition-all duration-300 ${
         scroll
-          ? "fixed top-0 z-50 w-[100%] py-3 px-2  sm:w-[91%]  md:w-[93%] lg:w-[95%] bg-[#F9F7FB] rounded-full shadow-lg"
+          ? "fixed top-0 z-50  w-[100%] py-2 px-2  sm:w-[91%]    md:w-[93%] lg:w-[95%] bg-[#F9F7FB] rounded-full shadow-lg"
           : "-top-2 bg-transparent"
       }`}
     >
       <div>
-        <a href="/" className="text-gray-500 hover:text-gray-700">
+        <a href="/" className=" text-gray-500 hover:text-gray-700">
           <img
-            className="w-[120px] min-w-[120px] max-w-[120px] h-auto"
-            src="https://sr-website.shiprocket.in/wp-content/uploads/2023/07/srShipping.svg"
-            alt="Logo"
+            className=" w-[100px]   h-[40px]  sm:max-w-[120px] sm:h-auto"
+            src={cargologo}
+            alt="CargoxLogo"
           />
         </a>
       </div>
+
+      
+
+
 
       {/* Links (Horizontally Scrollable on Small Screens) */}
         <div className="flex">
@@ -89,10 +91,10 @@ export const Nav2 = () => {
         {!hideNavlinks && (
           <>
             <Link className="shrink-0 md:block hidden">Overview</Link>
-            <Link className="shrink-0 md:block hidden">Same Day Delivery</Link>
-            <Link className="shrink-0 md:block hidden">Doorstep Delivery</Link>
-            <Link className="shrink-0 md:block hidden">Shipping Rate Calculator</Link>
-            <Link className="shrink-0 md:block hidden">Blog</Link>
+            <Link className="shrink-0 md:block hidden">Channel Integration</Link>
+            <Link className="shrink-0 md:block hidden">Shipping Rate calculator</Link>
+            <Link className="shrink-0 md:block hidden">Resource</Link>
+            <Link className="shrink-0 md:block hidden">Top location</Link>
           </>
         )}
       </div>
@@ -100,9 +102,9 @@ export const Nav2 = () => {
       {/* Start Shipping Now Button */}
       <div>
       <Link
-        className={`shrink-0 bg-purple-500 text-white px-2 py-2 xs:text-xs sm:text-base rounded-full `}
+        className={` shrink-0 bg-purple-500 text-white px-2 py-2 xs:text-xs sm:text-sm rounded-full`}
       >
-        Start Shipping Now
+        Try for free
       </Link>
       </div>
         </div>

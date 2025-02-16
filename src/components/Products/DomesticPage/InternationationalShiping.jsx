@@ -1,7 +1,7 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
-import Internatishipbg from "../../../assets/Domestic/Internatishipbg.webp";
+import Internatishipbg from "../../../assets/images/Domestic/Internatishipbg.webp";
 
 export const InternationalShipping = () => {
   return (

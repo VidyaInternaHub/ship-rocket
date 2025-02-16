@@ -1,7 +1,7 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
-import trackingbg from "../../../assets/Domestic/trackingbg.webp";
+import trackingbg from "../../../assets/images/Domestic/trackingbg.webp";
 
 export const BrandTracking = () => {
   return (

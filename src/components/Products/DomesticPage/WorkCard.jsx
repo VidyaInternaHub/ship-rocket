@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import work1 from '../../../assets/Domestic/work1.svg';
-import work2 from '../../../assets/Domestic/work2.svg';
-import work3 from '../../../assets/Domestic/work3.svg';
+import work1 from '../../../assets/images/Domestic/work1.svg';
+import work2 from '../../../assets/images/Domestic/work2.svg';
+import work3 from '../../../assets/images/Domestic/work3.svg';
 
 export const WorkCard = () => {
   const workdata = [
