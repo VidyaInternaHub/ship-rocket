@@ -144,7 +144,7 @@ const Dropdown = ({ activeDropdown }) => {
       transition={{ duration: 0.4, ease: "easeInOut" }}
       style={{ transformOrigin: "top" }}
     >
-      {activeDropdown === "Product" && <ProductsLinkBox />}
+      {activeDropdown === "Product" && <ProductsLinkBox className='z-50' />}
       {activeDropdown === "Platform" && <div>Platform Content</div>}
       {activeDropdown === "Pricing" && <div>Pricing Content</div>}
       {activeDropdown === "Resource" && <div>Resource Content</div>}

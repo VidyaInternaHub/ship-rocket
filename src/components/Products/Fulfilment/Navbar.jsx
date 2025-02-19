@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className={`w-full mt-4 p-2 pb-4 bg-[#ffffffbf] backdrop-blur-xs sticky top-0 z-40  `}
+        className={`w-full mt-4 p-2 pb-4 bg-[#ffffffbf] backdrop-blur-xs sticky top-0 z-10  `}
       >
         <div className=" max-w-6xl mx-auto flex justify-between items-center">
           <img src={Logo2} alt="Logo" className="h-12  mt-0" />

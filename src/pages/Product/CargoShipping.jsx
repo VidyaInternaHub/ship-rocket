@@ -21,7 +21,7 @@ import Navbar from "../../components/Products/CargoShipping/Navbar";
 
 function CargoShipping() {
   return (
-    <div className="overflow-x-hidden custom-gradient1 ">
+    <div className="overflow-x-hidden ">
       {/* <div className='max-w-6xl mx-auto  md:block'> */}
       {/* </div> */}
       <Header />

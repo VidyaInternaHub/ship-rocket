@@ -11,6 +11,7 @@ import { ShipXMain } from "./pages/Product/ShipXMain.jsx";
 import QuickPage from "./pages/Product/QuickPage.jsx";
 import CargoShipping from "./pages/Product/CargoShipping.jsx";
 import ShipX from "./pages/Product/ShipX.jsx";
+import Launchx from "./pages/Product/Launchx.jsx";
 
 
 const router = createBrowserRouter([
@@ -18,14 +19,16 @@ const router = createBrowserRouter([
   { path: "/domestic-shipping", element: <DomesMain /> },
   { path: "/fulfillment", element: <Fulfilllment /> },
   { path: "/cargox", element: <CargoXMain /> },
-  { path: "/shipx", element: <ShipXMain /> },
+  // { path: "/shipx", element: <ShipXMain /> },
   { path: "/quick", element: <QuickPage /> },
   { path: "/cargo-shipping", element: <CargoShipping /> },
-  { path: "/shipx", element: <ShipX/> },
-  { path: "/cargox", element: <>Cargox</> },
+  { path: "/shipx", element: <ShipX /> },
+  { path: "/cargox", element: <CargoXMain /> },
+  {path:"/launchx",element:<Launchx />}
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>
 );
+
