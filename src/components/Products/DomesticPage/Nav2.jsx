@@ -95,7 +95,7 @@ export const Nav2 = () => {
 
         <div>
           <Link
-            className="shrink-0 bg-blue-600 text-white px-3 py-2 xs:text-xs sm:text-base rounded-lg hover:bg-blue-700 transition"
+            className="shrink-0 bg-blue-500 text-white px-3 py-2 xs:text-xs sm:text-base rounded-lg hover:bg-blue-700 transition"
           >
             Get Started
           </Link>

@@ -1,41 +1,40 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
-import mapimg from "../../../assets/images/Domestic/map.webp";
+import newMapImg from "../../../assets/images/Domestic/newmapbg.webp"; 
 
 export const Shipping_Map = () => {
   return (
-    <div className="max-w-full mx-8 pt-6 mt-30 bg-[#F6FAFE] px-8 py-3 rounded-lg">
-      <div className=" grid sm:grid-cols-1 md:grid-cols-2 items-center my-8">
+    <div className="max-w-full mx-8 pt-6 mt-30 bg-[#F6FAFE] px-8 py-6 rounded-lg shadow-lg">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 items-center my-8 gap-6">
         <div>
-          <h1 className="text-4xl lg:text-5xl font-semibold mb-12 ">
+          <h1 className="text-4xl lg:text-5xl font-bold leading-snug">
             <span className="text-[#0B0757]">One shipping platform </span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-purple-300 via-green-400 to-[#6849EC]">
-              to reach everywhere
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-green-400 to-purple-500">
+              to connect worldwide
             </span>
           </h1>
-          <p className="text-gray-700 text-lg tracking-tight py-2 mx-2 font-TWKLausanne">
-            With multiple courier partners at your service and 24000+ pin codes
-            within your reach, expanding your customer base never feels like a
-            pain.
+          <p className="text-gray-700 text-lg tracking-tight py-3 mx-2 font-medium">
+            Deliver across 24000+ locations with ease. Our advanced logistics network ensures faster, 
+            affordable, and seamless shipping solutions for your business.
           </p>
-          <h1 className="text-2xl">
-            <span>Start shipping</span>
-            <span className="font-bold text-purple-600"> @₹20/500gm </span>
-            <span>only</span>
+          <h1 className="text-2xl mt-4">
+            <span>Start shipping at just </span>
+            <span className="font-bold text-blue-600">₹19/500gm </span>
+            <span>— super affordable rates!</span>
           </h1>
-          <div className="text-purple-600 text-lg mt-6 ">
-            <Link className=" inline-flex items-center gap-x-1">
-              View plans
-              <GoArrowUpRight className="text-x" />
+          <div className="text-blue-600 text-lg mt-6 font-semibold">
+            <Link className="inline-flex items-center gap-x-1 hover:underline">
+              View Plans
+              <GoArrowUpRight className="text-xl" />
             </Link>
           </div>
         </div>
-        <div className=" flex justify-end">
+        <div className="flex justify-end">
           <img
-            className=" w-[full] h-[full]  md:h-[350px] md:w-[350px] lg:w-[450px] lg:h-[450px] "
-            src={mapimg}
-            alt=""
+            className="w-full max-w-[450px] md:max-w-[380px] lg:max-w-[500px] rounded-xl shadow-md"
+            src={newMapImg}
+            alt="Global Shipping Map"
           />
         </div>
       </div>
