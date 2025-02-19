@@ -1,39 +1,39 @@
-import tech1 from '../../../assets/images/Domestic/tech1.svg'
-import tech2 from '../../../assets/images/Domestic/tech2.svg'
-import tech3 from '../../../assets/images/Domestic/tech3.svg'
-import tech4 from '../../../assets/images/Domestic/tech4.svg'
-import tech5 from '../../../assets/images/Domestic/tech5.svg'
-import tech6 from '../../../assets/images/Domestic/tech6.svg'
+import icon1 from '../../../assets/images/Domestic/tech1.webp';
+import icon2 from '../../../assets/images/Domestic/tech2.webp';
+import icon3 from '../../../assets/images/Domestic/tech3.webp';
+import icon4 from '../../../assets/images/Domestic/tech4.webp';
+import icon5 from '../../../assets/images/Domestic/tech5.webp';
+import icon6 from '../../../assets/images/Domestic/tech6.webp';
 
-export const Data=[
+export const Data = [
     {
-        tech:tech1,
-        facility:'Seamless channel integration',
-        desc:'Integrate all your shopping carts and marketplaces to sync all your inventory and orders',
+        icon: icon1,
+        facility: 'Seamless Channel Integration',
+        desc: 'Easily connect all your online stores and marketplaces for a unified shipping experience.',
     },
     {
-        tech:tech2,
-        facility:'Courier recommendation engine',
-        desc:'Boost your delivery performance by shipping with a courier recommended by AI',
+        icon: icon2,
+        facility: 'AI-Powered Courier Selection',
+        desc: 'Let AI choose the best courier based on delivery speed, cost, and reliability.',
     },
     {
-        tech:tech3,
-        facility:'Bulk order creation',
-        desc:'Handle order surges easily by adding multiple orders instantly',
+        icon: icon3,
+        facility: 'Bulk Order Processing',
+        desc: 'Efficiently handle order spikes with our fast bulk order creation system.',
     },
     {
-        tech:tech4,
-        facility:'Auto-documentation',
-        desc:'Our system auto-generates invoices and manifests, speeding up the shipping process',
+        icon: icon4,
+        facility: 'Automated Documentation',
+        desc: 'Instantly generate invoices, manifests, and shipping labels to save time.',
     },
     {
-        tech:tech5,
-        facility:'Shipping rate calculator',
-        desc:'Estimate shipping rates based on origin pin code, destination pin code, weight and dimensions',
+        icon: icon5,
+        facility: 'Smart Shipping Rate Calculator',
+        desc: 'Get real-time shipping cost estimates based on package dimensions and delivery location.',
     },
     {
-        tech:tech6,
-        facility:'Smart NDR redressal',
-        desc:'Automate delivery validation and reattempt more successfully with our AI assistant',
-    },
+        icon: icon6,
+        facility: 'Intelligent NDR Management',
+        desc: 'Automate delivery validation and schedule re-attempts efficiently using AI.',
+    }
 ]
