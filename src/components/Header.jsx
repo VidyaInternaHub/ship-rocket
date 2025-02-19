@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Logo from "../assets/images/brands/shiprocket_logo.svg";
+import Logo from "../assets/images/logo/headlogo.png";
 import { Link, useLocation } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
 import ProductsLinkBox from "./Products/Fulfilment/ProductsLinkBox";
@@ -52,7 +52,7 @@ function Header() {
 
   return (
     <motion.nav
-      className={` p-4 w-full justify-between items-center relative hidden md:flex ${
+      className={` px-4 py-1 w-full justify-between items-center relative hidden md:flex ${
         routeStatus ? "border-b-2 border-dashed border-zinc-200 bg-transparent" : ""
       } ${
         showFixedHeader
@@ -64,7 +64,7 @@ function Header() {
     >
       {/* Logo */}
       <Link to="/">
-        <img src={Logo} alt="Logo" className="w-40" />
+        <img src={Logo} alt="Logo" className="w-20 h-auto" />
       </Link>
 
       {/* Navigation Links */}

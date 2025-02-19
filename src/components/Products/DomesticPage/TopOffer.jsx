@@ -2,30 +2,31 @@ import React from "react";
 
 export const TopOffer = () => {
   return (
-    <div className="px-8 hidden md:flex md:text-sm lg:text-base rounded-lg justify-center items-center gap-3 bg-gradient-to-r from-purple-400 via-purple-200 to-orange-200 py-1">
+    <div className="px-8 hidden md:flex md:text-sm lg:text-base rounded-lg justify-center items-center gap-3 bg-gradient-to-r from-blue-500 via-indigo-300 to-pink-300 py-2 shadow-lg">
       <div>
-        <img
-          className="w-8"
-          src="https://sr-website.shiprocket.in/wp-content/uploads/2023/11/speaker.png"
-          alt=""
-        />
+      <img
+  className="w-8 h-8"
+  src="https://cdn-icons-png.flaticon.com/128/483/483124.png"
+  alt="Offer Announcement"
+/>
       </div>
       <div>
-        <p className="text-sm text-[#0B0757] font-bold font-manrope">
-          Recharge Now for
-          <span className="text-[#0B0757] font-extrabold"> ₹1000 </span>& Get
-          <span className="text-[#0B0757] font-extrabold"> ₹1600* </span>
-          In Your Wallet. Use Code:
-          <span className="text-[#0B0757] font-extrabold"> FLAT600 </span> |
-          Limited Period Offer On First Recharge
+        <p className="text-sm text-[#1A1A40] font-bold font-manrope">
+          Recharge Now & Get an Extra
+          <span className="text-[#1A1A40] font-extrabold"> ₹1500 </span>in Your Wallet
+          on Your First Recharge of
+          <span className="text-[#1A1A40] font-extrabold"> ₹900* </span>.
+          Use Code:
+          <span className="text-[#1A1A40] font-extrabold"> EXTRA600 </span> |
+          Limited Time Deal – Hurry Up!
         </p>
       </div>
       <div className="space-x-2 space-y-2 lg:space-y-0 text-sm">
-        <button className="border-b-1 space-x-1 text-[#0B0757]">
-          *T&C Apply.
+        <button className=" space-x-1 text-[#1A1A40] underline">
+          *T&C Apply
         </button>
-        <button className="bg-white border border-purple-700 px-1 py-1 rounded-lg">
-          Sign Up Now
+        <button className="bg-white border border-blue-700 px-2 py-1 rounded-lg hover:bg-blue-100 transition">
+          Claim Now
         </button>
       </div>
     </div>
