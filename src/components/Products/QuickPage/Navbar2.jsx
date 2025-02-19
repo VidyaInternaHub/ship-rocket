@@ -21,7 +21,7 @@ function Navbar2() {
   }, []);
   return (
     <div
-      className={` ${!isSticky && "custom-gradient1"} py-4 sticky top-4 z-40`}
+      className={` ${!isSticky && "custom-gradient1"} py-4 sticky -top-4 z-10`}
     >
       <div className="max-w-6xl mx-auto  ">
         <div

@@ -132,7 +132,7 @@ const valueAddedServices = [
 
 function ProductsLinkBox() {
   return (
-    <div className="flex  bg-gray-100 shadow-xl h-auto overflow-y-scroll lg:h-[100%] w-full rounded-2xl ">
+    <div className="flex  bg-gray-100 shadow-xl h-auto overflow-y-scroll hide-scrollbar z-50 lg:h-[100%] w-full rounded-2xl ">
       
       {/* Products Section */}
       <div className=" bg-white py-2 lg:py-6 pl-6 lg:w-3/4 w-full">
@@ -185,7 +185,7 @@ function ProductsLinkBox() {
       {/* Value-Added Services Section */}
       <div className="bg-gray-100 p-5 w-1/4 hidden md:block">
         <h2 className="  mb-2 text-gray-400 ">Value-Added Services</h2>
-        <div className="flex flex-col text-sm gap-2">
+        <div className="flex flex-col text-sm gap-2 ">
           {valueAddedServices.map((service) => (
             <Link
               key={service}

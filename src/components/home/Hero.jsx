@@ -6,7 +6,8 @@ import banner2 from "../../assets/images/banners/banner-2.webp";
 import banner3 from "../../assets/images/banners/banner-3.webp";
 import banner4 from "../../assets/images/banners/banner-4.webp";
 import banner5 from "../../assets/images/banners/banner-5.webp";
-import bgImage from "../../assets/images/backgrounds/bg-colors-scaled-1.webp"
+import bgImage from "../../assets/images/backgrounds/bg-colors-scaled-1.webp";
+import Header from "../Header";
 
 // Image data array
 const sliders = [
@@ -63,65 +64,69 @@ function Hero() {
 
   return (
     <div
-      className="relative overflow-hidden w-screen h-screen flex container"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "contain",
       }}
     >
-      {sliders.map((slider, index) => (
-        <div
-          key={index}
-          className={`absolute top-0 left-0 w-full h-full flex transition-opacity duration-500 ease-in-out ${
-            currentIndex === index ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <div className="ml-4 w-1/2 h-full flex flex-col items-start justify-center my-auto p-4">
-            <h1 className="text-black text-2xl md:text-4xl lg:text-5xl font-bold text-start leading-16">
-              {slider.title}
-            </h1>
-            <p className="text-black text-start mt-2 mb-4">{slider.desc}</p>
-            <button className="w-fit bg-blue-500 text-white px-4 py-2 rounded-md flex items-center hover:bg-white hover:text-blue-500">
-              Sign Up for Free <BsArrowRight className="ml-2" />
-            </button>
-          </div>
-          <div className="w-1/2 h-full">
-            <img
-              src={slider.image}
-              alt={`slide-${index}`}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      ))}
-
-      {/* Navigation Buttons */}
-      <div className="absolute top-96 gap-56 inset-0 flex items-center px-6">
-        <button
-          onClick={prevImage}
-          className="bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75"
-        >
-          <FaChevronLeft size={12} />
-        </button>
-        <button
-          onClick={nextImage}
-          className="bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75"
-        >
-          <FaChevronRight size={12} />
-        </button>
-      </div>
-
-      {/* Indicator Dots */}
-      <div className="absolute bottom-18 left-1/7 transform -translate-x-1/2 flex space-x-2">
-        {sliders.map((_, index) => (
-          <span
+      <Header />
+      <div className="relative overflow-hidden w-screen h-screen flex container">
+        {sliders.map((slider, index) => (
+          <div
             key={index}
-            className={`w-8 h-0.5 rounded-full cursor-pointer transition-all ${
-              currentIndex === index ? "bg-green-500 scale-125" : "bg-gray-400"
+            className={`absolute top-0 left-0 w-full h-full flex transition-opacity duration-500 ease-in-out ${
+              currentIndex === index ? "opacity-100" : "opacity-0"
             }`}
-            onClick={() => setCurrentIndex(index)}
-          ></span>
+          >
+            <div className="ml-4 -mt-12 w-1/2 h-full flex flex-col items-start justify-center my-auto p-4">
+              <h1 className="text-black text-2xl md:text-4xl lg:text-5xl font-bold text-start leading-16">
+                {slider.title}
+              </h1>
+              <p className="text-black text-start mt-2 mb-12">{slider.desc}</p>
+              <button className="w-fit bg-blue-500 text-white px-4 py-2 rounded-md flex items-center hover:bg-white hover:text-blue-500">
+                Sign Up for Free <BsArrowRight className="ml-2" />
+              </button>
+            </div>
+            <div className="w-1/2 h-full">
+              <img
+                src={slider.image}
+                alt={`slide-${index}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
         ))}
+
+        {/* Navigation Buttons */}
+        <div className="absolute top-96 gap-56 inset-0 flex items-center px-6">
+          <button
+            onClick={prevImage}
+            className="bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75"
+          >
+            <FaChevronLeft size={12} />
+          </button>
+          <button
+            onClick={nextImage}
+            className="bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75"
+          >
+            <FaChevronRight size={12} />
+          </button>
+        </div>
+
+        {/* Indicator Dots */}
+        <div className="absolute bottom-18 left-1/7 transform -translate-x-1/2 flex space-x-2">
+          {sliders.map((_, index) => (
+            <span
+              key={index}
+              className={`w-8 h-0.5 rounded-full cursor-pointer transition-all ${
+                currentIndex === index
+                  ? "bg-green-500 scale-125"
+                  : "bg-gray-400"
+              }`}
+              onClick={() => setCurrentIndex(index)}
+            ></span>
+          ))}
+        </div>
       </div>
     </div>
   );
